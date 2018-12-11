@@ -16,4 +16,5 @@ I am planning to create somewhat of a flight status program.
  - Multiple cities incorporated around the world
  - App version / Mobile browser compatible
  - Expand possibilities using flightaware?
+ - user input options
  
