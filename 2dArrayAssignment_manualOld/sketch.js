@@ -6,7 +6,7 @@
 // 
 
 let widths = [425,200,175,125,125,250];
-let airlineCodes = new Map ();
+// let airlineCodes = new Map ();
 let rows = 15;
 let cols = 6;
 let x,y;
@@ -36,6 +36,7 @@ let airport_code;
 
 function preload() {
   info = loadJSON('assets/Toronto.json')
+  codes = loadStrings('assets/AirlineCodes.txt')
   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
   font_2 = loadFont("assets/famirids/Famirids..ttf");
   font_3 = loadFont("assets/digital-dream/DigitalDream.ttf");
@@ -47,25 +48,26 @@ function setup() {
   // grid = create2dArray(cols, rows);
   x = 10;
   y = 45;
- 
+  
+  
 
   departures = info.AirportBoardsResult.departures.flights;
   arrivals = info.AirportBoardsResult.arrivals.flights;
   scheduled = info.AirportBoardsResult.scheduled.flights;
   enroute = info.AirportBoardsResult.enroute.flights;
 
-  airlineCodes.set("ACA", "Air Canada");
-  airlineCodes.set("JZA", "Air Canada Jazz");
-  airlineCodes.set("WJA", "WestJet");
-  airlineCodes.set("WEN", "Westjet Encore");
-  airlineCodes.set("SKW", "Delta");
-  airlineCodes.set("DAL", "Delta");
-  airlineCodes.set("EDV", "Delta");
-  airlineCodes.set("CJT", "CargoJet");
-  airlineCodes.set("SWG", "Sunwing");
-  airlineCodes.set("SLQ", "Express Air");
-  airlineCodes.set("WEW", "Transwest Air");
-  airlineCodes.set("SLG", "Transwest Air");
+  // airlineCodes.set("ACA", "Air Canada");
+  // airlineCodes.set("JZA", "Air Canada Jazz");
+  // airlineCodes.set("WJA", "WestJet");
+  // airlineCodes.set("WEN", "Westjet Encore");
+  // airlineCodes.set("SKW", "Delta");
+  // airlineCodes.set("DAL", "Delta");
+  // airlineCodes.set("EDV", "Delta");
+  // airlineCodes.set("CJT", "CargoJet");
+  // airlineCodes.set("SWG", "Sunwing");
+  // airlineCodes.set("SLQ", "Express Air");
+  // airlineCodes.set("WEW", "Transwest Air");
+  // airlineCodes.set("SLG", "Transwest Air");
 
 
 
@@ -75,6 +77,7 @@ function setup() {
 
 function draw() {
   background(20);
+  // setAirlineCodes();
   determineState();
   displayGrid();
   displayJSON();
@@ -223,4 +226,12 @@ function mouseClicked() {
   // else if (state === 4) {
   //   state = 1;
   // }
+}
+
+function setAirlineCodes () {
+  for (let i = 0; i >= 0; i++) {
+    for (let j = 0; j >= 0; j++) {
+      console.log(codes[j]);
+    }
+  }
 }

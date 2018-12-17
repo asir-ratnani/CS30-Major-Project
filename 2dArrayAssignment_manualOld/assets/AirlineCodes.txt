@@ -595,4 +595,4 @@ CFT	Jet Freighters "Casper Freight"
 KDC	KD Air "Kay Dee" (Canada)
 JTL	Jet Linx Aviation LLC "Jetlinx" (Omaha, Nebraska)
 JDC	Deere And Company "John Deere" (Moline, IL)
-	IDX	Indonesia AirAsia X "Red Phoenix" (Jakarta)
+IDX	Indonesia AirAsia X "Red Phoenix" (Jakarta)
