@@ -6,7 +6,7 @@
 // 
 
 let widths = [425,200,175,125,125,250];
-// let airlineCodes = new Map ();
+let airlineCodes = new Map ();
 let rows = 15;
 let cols = 6;
 let x,y;
@@ -44,6 +44,7 @@ function preload() {
 
 function setup() {
   createCanvas(1700, 900);
+  setAirlineCodes();
   cellSize = height / rows;
   // grid = create2dArray(cols, rows);
   x = 10;
@@ -77,7 +78,7 @@ function setup() {
 
 function draw() {
   background(20);
-  // setAirlineCodes();
+
   determineState();
   displayGrid();
   displayJSON();
@@ -228,10 +229,3 @@ function mouseClicked() {
   // }
 }
 
-function setAirlineCodes () {
-  for (let i = 0; i >= 0; i++) {
-    for (let j = 0; j >= 0; j++) {
-      console.log(codes[j]);
-    }
-  }
-}

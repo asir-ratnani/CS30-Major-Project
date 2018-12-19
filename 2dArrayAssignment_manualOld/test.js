@@ -1,4 +1,6 @@
 let airlines;
+let airlineCodes = new Map ();
+
 
 
 
@@ -7,12 +9,21 @@ function preload() {
 }
 
 function setup() {
-
+    setMeUp();
 }
 
 function draw() {
-    // airlines.split(" ");
-    console.log(airlines[0]);
-    console.log(airlines[1]);
-    console.log(airlines[2]);
+
+
+}
+
+function setMeUp() {
+    for (let i =0; i < airlines.length; i ++) {
+        let airCode = airlines[i].split(" ")[0];
+        let airlineName = airlines[i].substr(4, );
+
+
+        airlineCodes.set(airCode, airlineName);
+
+    }
 }

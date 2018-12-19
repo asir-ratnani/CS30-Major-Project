@@ -1,598 +1,598 @@
-AAL	American Airlines "American"
-SWA	Southwest "Southwest" (Dallas, TX)
-UAL	United "United"
-DAL	Delta "Delta"
-SKW	SkyWest "SkyWest" (St. George, UT)
-RYR	Ryanair "Ryanair" (Ireland)
-THY	Turkish Airlines "Turkair" (Turkey)
-QTR	Qatar Airways "Qatari" (Doha)
-BAW	British Airways "Speedbird" (United Kingdom)
-JBU	JetBlue "JetBlue"
-UAE	Emirates "Emirates"
-EZY	easyJet "Easy" (United Kingdom)
-ASA	Alaska Airlines "Alaska"
-AFL	Aeroflot "Aeroflot" (Russian Federation)
-DLH	Lufthansa "Lufthansa" (Germany)
-AFR	Air France "Airfrance" (France)
-JZA	Jazz Air "Jazz" (Canada)
-RPA	Republic "Brickyard" (Indianapolis, Indiana)
-ACA	Air Canada "Air Canada" (Canada)
-CPA	Cathay Pacific "Cathay" (China)
-SIA	Singapore Airlines "Singapore" (Singapore)
-ENY	Envoy Air "Envoy" (Fort Worth, TX)
-ASH	Mesa "Air Shuttle" (Phoenix, AZ)
-GLO	Gol Transportes Aereos "GOL"
-UPS	United Parcel Service "UPS"
-EJA	NetJets Aviation "EXECJET" (Columbus, OH)
-WJA	WestJet "WestJet" (Calgary, Alberta)
-KAL	Korean Air Lines Co. "Koreanair" (Republic Of Korea)
-KLM	KLM "KLM" (Netherlands)
-NKS	Spirit "Spirit Wings" (Miramar, FL)
-EDV	Endeavor Air "Endeavor" (Minneapolis, Minnesota)
-ETD	Etihad Airways "ETIHAD" (Abu Dhabi)
-CCA	Air China "Air China" (China)
-TAM	LATAM Brasil "Tam" (Brazil)
-IBE	Iberia "Iberia" (Espana)
-WZZ	Wizz Air "WIZZ" (Hungary)
-SVA	Saudia "Saudia" (Saudi Arabia)
-FDX	FedEx "FedEx" (Memphis, TN)
-THA	Thai Airways "Thai" (Thailand)
-IGO	IndiGo "IFLY" (New Delhi)
-CSN	China Southern Airlines "China Southern" (China)
-JIA	PSA Airlines "Blue Streak" (Vandalia, OH)
-QFA	Qantas "Qantas" (Australia)
-AVA	Avianca "Avianca"
-IBK	Norwegian Air International "NORTRANS" (Ireland)
-ASQ	ExpressJet "Acey" (Atlanta, GA)
-CES	China Eastern "China Eastern" (China)
-SLI	Aeroméxico Connect "Costera"
-FFT	Frontier "Frontier Flight" (Denver, CO)
-AUA	Austrian Airlines "Austrian" (Austria)
-SAS	SAS "Scandi" (Sweden)
-AZU	Azul Brazilian Airlines "AZUL BLUEBIRD" (Barueri)
-VOI	Volaris "VOLARIS" (Mexico City)
-VLG	Vueling Airlines "Vueling" (Spain)
-LOT	Lot - Polskie Linie Lotnicze "Pollot" (Pologne)
-CMP	Copa Airlines "Copa"
-NAX	Norwegian Air Shuttle "Nor Shuttle"
-AAR	Asiana "Asiana" (Republic Of Korea)
-FIN	Finnair "Finnair" (Finland)
-TAP	Transportes Aereos Portugueses "Air Portugal" (Portugal)
-HAL	Hawaiian Airlines "Hawaiian"
-ANA	All Nippon "All Nippon" (Japan)
-HVN	Vietnam Airlines "Viet Nam Airlines" (Vietnam)
-PGT	Pegasus Airlines "Sunturk" (I)
-SWR	Swiss "SWISS" (Suisse)
-AZA	Alitalia "Alitalia" (Italie)
-VOZ	Virgin Australia "Velocity" (Australia)
-HOP	HOP! "Air Op" (France)
-JAL	Japan Airlines "Japanair" (Japan)
-ARG	Aerolineas Argentinas "Argentina" (Argentina)
-CPZ	Compass Airlines "Compass" (Minneapolis, MN)
-JST	Jetstar "Jetstar" (Australia)
-PAL	Philippine Air Lines "Philippine"
-AMX	AeroMéxico "Aeromexico" (Mexico)
-EVA	EVA Air "Eva" (Taoyuan)
-AIJ	Interjet "INTERJET" (Mexico City)
-GIA	Garuda Indonesia "Indonesia"
-ONE	Avianca Brazil "Ocean Air" (Sao Paulo, Brasil)
-AEA	Air Europa "Europa" (Espana)
-CHH	Hainan Airlines "Hainan" (Haikou)
-ANZ	Air New Zealand "New Zealand" (New Zealand)
-AIC	Air India "Airindia" (India)
-CAL	China Airlines "DYNASTY" (Taiwan)
-VIR	Virgin Atlantic "Virgin" (United Kingdom)
-MAS	Malaysia Airlines "Malaysian" (Malaysia)
-TOM	Thomson "TOMSON" (United Kingdom)
-EIN	Aer Lingus "Shamrock" (Ireland)
-AWI	Air Wisconsin "WISCONSIN" (Greenville, Wisconsin)
-QXE	Horizon "Horizon Air" (Seattle, WA)
-ABY	Air Arabia "ARABIA" (Sarjah)
-AUI	Ukraine International "Ukraine International" (Ukraine)
-CFG	Condor "Condor" (Germany)
-ETH	Ethiopian Airlines "Ethiopian" (Ethiopia)
-BEE	Flybe "Jersey" (Exeter)
-SDM	Rossiya Airlines "Russia" (Russia)
-WEN	WestJet Encore "Encore" (Calgary, Alberta)
-EJM	Executive Jet Management "Jet Speed"
-SWG	Sunwing "Sunwing" (Canada)
-XAX	AirAsia X "XANADU" (Kuala Lumpur)
-JJA	Jeju Air "JEJU AIR" (Jeju, Jeju-do)
-TGW	Scoot "Scooter" (Singapore)
-AXM	AirAsia "Asian Express" (Sepang, Selangor, Malaysia)
-NZM	Mount Cook "Mountcook"
-LOF	Trans States "Waterski" (Bridgeton, Missouri)
-LAN	LAN Airlines "LAN Chile" (Chile)
-GJS	GoJet "Lindbergh" (Bridgeton, Missouri)
-SVR	Ural "Sverdlovsk Air" (Yekaterinburg, Russia)
-GTI	Atlas Air "GIANT" (Purchase, NY)
-FDB	FlyDubai (United Arab Emirates)
-GFA	Gulf Air "Gulf Air"
-VIV	VivaAerobus "Viva" (Apodaca, Nuevo León)
-AUT	Austral Lineas Aereas "Austral"
-ROU	Air Canada Rouge "ROUGE"
-PBD	Pobeda "POBEDA" (Moscow)
-CEB	Cebu Pacific Air "CEBU" (Philippines)
-BTI	Air Baltic "Airbaltic"
-SAA	South African Airways "Springbok"
-JAI	Jet Airways "Jet Airways"
-OMA	Oman Air "Oman Air"
-ICE	Icelandair "Iceair" (Iceland)
-JNA	Jin Air "Jin Air" (Gangseo-gu, Seoul, South Korea)
-ALK	SriLankan Airlines "SRILANKAN"
-VJC	VietJet Air "VietJet" (Vietnam)
-QLK	QantasLink "Q-Link" (Australia)
-CFE	Cityflyer Express "Flyer"
-SBI	SAirlines "Siberia Airlines"
-RAM	Royal Air Maroc "Royalair Maroc" (Maroc)
-AXB	Air India Express "EXPRESS INDIA" (Kochi, India)
-UTA	UTair "UTAIR" (Russia)
-POE	Porter "Porter Air" (Canada)
-MXD	Malindo Air "MALINDO"
-CON	Conoco Phillips "Conoco" (Houston, TX)
-LPE	LAN Peru "LAN Peru"
-RXA	Regional Express Airlines "Rex" (Australia)
-TWB	Tway Air "TEEWAY" (South Korea)
-CLH	Lufthansa Cityline "Hansaline"
-TLM	Thai Lion "Mentari" (Thailand)
-IBS	Iberia Express "Iberexpres" (Spain)
-CSC	Sichuan Airlines "Chuanhang"
-SKV	Sky Regional "Maple"
-XOJ	XOJET "XOJET" (Brisbane, CA)
-UCA	CommutAir "Commutair" (Plattsburgh, NY)
-NRS	Norwegian Air "REDNOSE" (Gatwick)
-ELY	El Al "Elal" (Israel)
-WOW	Wow Air "WOW AIR" (Reykjavík, Iceland)
-LXJ	Flexjet "FLEXJET" (Richardson, TX)
-DCM	fltplan.com "DOTCOM" (Southbury, CT)
-GAJ	Wheels Up - Gama Aviation "Gama Jet" (Stratford, CT)
-DAH	Air Algerie "Air Algerie" (Algiers, Algeria)
-SKU	Sky Airline "AEROSKY"
-BEL	Brussels Airlines "BEELINE" (Diegem, Machelen)
-BTK	Batik Air "BATIK" (Jakarta, Indonesia)
-EWG	Eurowings "Eurowings" (Düsseldorf)
-KZR	Air Astana "ASTANALINE" (Kazakhstan)
-CNS	Cobalt Air "CHRONOS" (Portsmouth, NH)
-KAC	Kuwait Airways Corporation "Kuwaiti" (Kuwait)
-TCX	Thomas Cook "KESTREL" (UK)
-MEA	Middle East Airlines - Air Liban "Cedar Jet" (Liban)
-TRA	Transavia Holland B.v. "Transavia" (Netherlands)
-KAP	Cape Air "Cair" (Barnstable, Massachusetts)
-SEJ	SpiceJet "SPICEJET" (Gurgaon, India)
-JON	Joon "JOON" (Paris)
-KTK	Azur Air "Katekavia" (Krasnoyarsk, Russia)
-AIQ	Thai AirAsia "THAI ASIA" (Bangkok, Thailand)
-ANE	Air Nostrum "NOSTRU AIR" (Valencia)
-GLP	Globus "GLOBUS" (Moscow, Russia)
-RLK	Air Nelson "LINK" (Nelson, New Zealand)
-MSR	Egypt Air "Egyptair" (Egypt)
-PDT	Piedmont "Piedmont" (Salisbury, Maryland)
-KNE	Flynas "NAS EXPRESS" (Riyadh)
-TSC	Air Transat "Transat" (Canada)
-CXA	XiamenAir "Xiamen Air" (Xiamen, Fujian, China)
-BOE	Boeing "Boeing" (Seattle, WA)
-ESR	Eastarjet "Excelsior"
-LNI	Lion Air (Indonesia)
-PIA	Pakistan International Airlines Corporation (PIA) "Pakistan" (Pakistan)
-ARE	LAN Colombia "LAN Colombia" (Bogata)
-CSA	Czech Airlines "Csa-lines" (Czech Republic)
-CRK	Hong Kong Airlines "Bauhinia" (Hong Kong)
-CSS	SF Airlines "SHUN FENG"
-JAF	TUI Fly "Beauty" (Belgium)
-AAY	Allegiant Air "Allegiant"
-PGA	Portugalia "Portugalia"
-GMI	Germania Fluggesellschaft Koln "Germania"
-ATN	Air Transport International Llc "Air Transport" (Little Rock, Arkansas)
-LGL	Luxair "Luxair" (Luxembourg)
-ROT	TAROM "TAROM"
-BWA	Caribbean Airlines "Caribbean Airlines" (Trinidad And Tobago)
-CKS	Kalitta Air "Connie" (Ypsilanti, MI)
-FJI	Fiji Airways "Fiji" (Fiji)
-UZB	Uzbekistan Airways "Uzbek" (Uzbekistan)
-ABL	Air Busan "AIR BUSAN" (Beomcheon-dong Busanjin-gu Busan)
-BCY	Cityjet "City-Ireland"
-TAX	Thai AirAsia X "EXPRESS WING" (Bangkok, Thailand)
-BBC	Bangladesh Biman "Bangladeshi" (Bangladesh)
-TAR	Tunis Air "Tunair" (Tunisia)
-KQA	Kenya Airways "Kenya"
-CLX	Cargolux Airlines International "Cargolux" (Luxembourg)
-BMS	Blue Air "Blue Messenger"
-FAB	First Air "First Air" (Canada)
-GGN	Air Georgian "Georgian" (Canada)
-DPJ	Delta Private Jets "Jet Card"
-ABW	AirBridgeCargo "AIRBRIDGE CARGO" (Moscow, Russia)
-CQH	Spring Airlines "AIR SPRING" (Shanghai)
-ISS	Air Italy "Air Italy" (Olbia, Sassari)
-SLK	Silkair "Silkair"
-BTQ	Boutique Air "BOUTIQUE" (San Francisco, CA)
-SXS	Sun Express (Turkey)
-JZR	Jazeera Airways "JAZEERA"
-SCX	Sun Country Airlines "Sun Country" (Minneapolis, MN)
-HAG	Hageland Aviation Services "Hageland" (Anchorage, Alaska)
-TWY	Sunset Aviation, LLC "Twilight"
-BRU	Belavia "Belarus Avia"
-GOW	GoAir "Go Air" (Mumbai)
-AEE	Aegean Airlines "Aegean" (Athens, Greece)
-WSG	Wasaya "Wasaya" (Canada)
-MPE	Canadian North Airlines "Empress" (Canada)
-SWQ	Swift Air "Swiftflight" (Phoenix, Arizona)
-AJX	Air Japan "AIR JAPAN" (Tokyo)
-IWY	interCaribbean Airways "Islandways" (Providenciales, Turks and Caicos Islands)
-CSH	Shanghai Airlines "Shanghai Air"
-CRQ	Air Creebec "Cree" (Canada)
-DTA	TAAG Angola Airlines "ANGOLA" (Luanda, Angola)
-VTA	Air Tahiti "Air Tahiti" (France)
-ASV	Air Seoul "Air Seoul" (Incheon, South Korea)
-MAC	Air Arabia Maroc "NAWRAS"
-PCO	Pacific Coastal Airlines "Pasco" (Canada)
-ASL	AIR SERBIA "AIR SERBIA" (Belgrade)
-HDA	Cathay Dragon "DRAGON" (China-Hong Kong)
-GWI	Germanwings "Germanwings"
-ADR	Adria "Adria"
-CYL	Alitalia CityLiner "CITYLINER" (Rome)
-AHY	Azerbaijan Airlines "Azal"
-PAC	Polar Air Cargo "Polar" (Purchase, NY)
-STK	Stobart Air
-EDW	Edelweiss Air AG "Edelweiss"
-BOV	Boliviana de Aviación "BOLIVIANA" (Cochabamba, Bolivia)
-TMC	Travel Management Company. LTD "Trailblazer"
-TAO	Transportes Aeromar "Trans-Aeromar"
-TVF	Transavia France "FRANCE SOLEIL"
-SHU	Aurora "SATAIR"
-LAK	Red Wing "REDLAKE" (Bay City, WI)
-CRL	Corsair International "Corsair" (France)
-EZS	easyJet Switzerland "Topswiss"
-MAU	Air Mauritius "Airmauritius"
-FRG	Freight Runners Express "Freight Runners"
-SFY	FlightSafety Academy "Sky Flite" (Vero Beach, FL)
-BRG	Bering Air "Bering Air" (Nome, Alaska)
-LOG	Loganair "Logan"
-VTM	Aeronaves TSM "Aeronaves"
-AAF	Aigle Azur "Aigle Azur"
-REU	Air Austral "Reunion"
-WSW	Swoop Airlines "Swoop" (Canada)
-SOO	Southern Air "Southern Air" (Florence, Kentucky)
-CAW	Comair "Comair" (South Africa)
-TFL	TUI Airlines "Orange" (The Netherands)
-RPN	US DHS ICE "Repatriate" (US)
-TJT	Twin Jet (France)
-TYA	Nordstar "Taimyr" (Norilsk, Russia)
-AIE	Air Inuit "Air Inuit" (Canada)
-EAY	Aero Airlines (Estonia)
-RJA	Royal Jordanian "Jordanian" (Jordan)
-DKH	Juneyao Airlines "AIR JUNEYAO" (China)
-RVF	Ravn Alaska "RAVEN FLIGHT" (Anchorage, AK)
-NDU	University of North Dakota "Sioux"
-VOE	Volotea "VOLOTEA"
-IRM	Mahan Air "Mahan Air"
-THU	Thunder "Air Thunder" (Canada)
-FDY	Southern Airways Express "Friendly" (Ft. Lauderdale, FL)
-CIT	Zanesville Aviation "Zane"
-FAD	flyadeal "Purple" (Jeddah)
-BSK	Miami Air International "Biscayne" (Miami, FL)
-EXS	Jet"Channex" (Leeds/Bradford)
-IAW	Iraqi Airways "Iraqi"
-OAE	Omni Air Express "Omni-Express" (Tulsa, OK)
-SJY	Sriwijaya Air "SRIWIJAYA" (Central Jakarta, Jakarta, Indonesia)
-XSR	Executive AirShare (Wichita, KS)
-CSJ	Castle Aviation "Castle" (Ravenna, OH)
-CAO	Air China Cargo "Airchina Freight" (China)
-HYD	Hydro-Quebec "HYDRO"
-QJE	QantasLink "QJET" (Adelaide, South Australia)
-AER	Alaska Central Express "Ace Air"
-TGZ	Georgian Airways "Tamazi" (Georgia)
-LDM	Laudamotion "Laudamotion" (Schwechat, Austria)
-GEC	Lufthansa Cargo "Lufthansa Cargo"
-ABQ	Airblue "PAKBLUE" (Pakistan)
-VTE	Contour Aviation "Volunteer" (Smyrna, TN)
-BMR	BMI Regional "Kittywake" (Aberdeen, Scotland)
-VKG	Thomas Cook "Viking" (Denmark)
-MLD	Air Moldova "Air Moldova"
-AMC	Air Malta "Air Malta"
-RNA	Royal Nepal Airlines "Royal Nepal"
-APJ	Peach Aviation "Air Peach"
-HGT	GMJ Air Shuttle "HIGHTECH" (McClellan, CA)
-MHO	Mokulele "Mahalo" (Hawaii)
-DLA	Air Dolomiti "Dolomiti"
-LNE	LAN Ecuador "AEROLANE" (Guayaquil)
-NDL	Chrono Aviation "Needle"
-TFX	Toll Aviation "Toll Freight" (Brisbane)
-SIL	Silver Airways "Silver Wings" (Fort Lauderdale, Florida)
-EZE	Eastern Airways "Eastflight"
-AHK	Ahk Air Hong Kong Limited "Air Hong Kong"
-KKK	AtlasGlobal "AtlasGlobal" (Istanbul, Turkey)
-KMI	K-Mile Air "KAY-MILE Air" (Bangkok, Thailand)
-IAD	AirAsia India "RED KNIGHT" (Chennai, India)
-LIA	Leeward Islands Air Transport "Liat" (Antigua And Barbuda)
-SGQ	SaudiGulf Airlines
-CAV	Calm Air "Calm Air" (Canada)
-CFP	Compania de Aviacion "Faucett"
-WHT	White "WHITEJET" (Portugal)
-GLG	Aerogal Aerolineas Galapagos (Ecuador)
-SDA	Sounds Air "Soundsair" (New Zealand)
-JSA	Jetstar Asia (Singapore)
-TUI	TuiFly "TUIJET" (Langenhagen)
-CGT	CNG-Transavia, Joint-Stock Company "Transgaz"
-RBA	Royal Brunei "Brunei"
-NAC	Northern Air Cargo "Yukon" (Anchorage, AK)
-PVL	PAL Airlines "Provincial" (St. Johns, NL)
-BLU	SolutionsAir "BLUEGRASS" (Zionsville Indiana)
-OAW	Helvetic (Switzerland)
-GBX	Gb Airlink "Island Tiger"
-PRY	Priority Air Charter, LLC "Priority Air"
-GUG	Aviateca "Aviateca"
-GLT	Aero Charter "Gaslight"
-CGC	Cal Gulf Aviation "Cal-Gulf"
-GLF	Gulfstream Aerospace "Gulfstream Test"
-TGG	Tigerair Australia "TIGGOZ" (Melbourne)
-VDA	Volga-dnepr "Volga-dnepr" (Russian Federation)
-NCB	North Cariboo Flying Service Ltd. "North Caribou" (Canada)
-JJP	Jetstar Japan "Orange Liner" (Narita, Japan)
-AUR	Aurigny Air Services Ltd. "Ayline"
-MAL	Morningstar Air "Morningstar" (Canada)
-IRA	Iran National Airlines Corp. "Iranair"
-FTH	Mountain Aviation "FOOT HILLS" (Broomfield, CO)
-WCC	West Coast Charters "West Coast" (California)
-BEC	Berkut Air (Astana, Kazakhstan)
-FWI	Air Caraïbes "French West"
-TVS	Smart Wings "Skytravel"
-NSS	Northstar Aviation "Northstar"
-CBJ	Beijing Capital Airlines "Capital Jet"
-SYL	Yakutia Airlines "AIR YAKUTIA" (Yakutsk, Russia)
-AZG	Silk Way West "Silk West" (Azerbaijan)
-LZB	Bulgaria Air "FLYING BULGARIA" (Bulgaria)
-CFS	Empire "Empire" (Hayden, Idaho)
-GCR	Tianjin Airlines "Bohai" (Tianjin)
-SSF	Severstal Air Company "Severstal"
-KBA	Kenn Borek Air Ltd. "Borek Air" (Canada)
-BLS	Bearskin Lake Air Service Limited "Bearskin" (Canada)
-PVN	Peruvian Airlines "Peruvian" (Lima, Perú)
-BEK	Berkhut Air (Kazakhstan)
-FBU	French Blue
-SCW	Braathens Regional Aviation "Scanwings"
-ROI	Avior Airlines "Avior"
-SXD	SunExpress Deutschland "Sunrise" (Germany)
-OAL	Olympic Air "Olympic" (Greece)
-CWG	Clear Wing "Clearwing"
-VNL	Vanilla "Vanilla" (Japan)
-MTN	Mountain Air Cargo "Mountain" (Denver, NC)
-CKK	China Cargo "Cargo King"
-WSN	Advanced Air "WINGSPAN" (Hawthorne, CA)
-CTL	Central Air Southwest, Inc. "Central Commuter" (Cushing, OK)
-KFS	Kalitta Charters "KALITTA" (Ypsilanti, Michigan)
-VHA	VH-Air Industrie "Air V-H"
-BOS	OpenSkies "Mistral" (United Kingdom)
-EWE	East West European "EUROWINGS"
-GLR	Central Mountain "Glacier" (Canada)
-CSZ	Shenzhen Airlines "Shenzhen Air"
-CGA	Congo Airways "Congressional"
-CGR	Compagnia Generale Ripreseaeree Spa "Comprip"
-RWZ	Red Wings Airlines "AIR RED" (Moscow, Russia)
-NOA	National Oceanic And Atmospheric Administration "NOAA"
-SCR	Jetstar "Southern Cross"
-DTH	Tassili (Algeria)
-NLA	PenAir "Peninsula" (Anchorage, Alaska)
-CFR	AFRICA ONE (DEMOCRATIC REPUBLIC OF CONGO)
-TKM	JM Family Aviation "Tacoma" (Fort Lauderdale, FL)
-CUB	Cubana de Aviacion "Cubana" (Cuba)
-TPU	Taca Peru
-JLG	Jet Logistics "Logistics" (Raleigh, NC)
-NOS	Neos "Moonflower" (Somma Lombardo, Lombardy, Italy)
-JBA	Helijet "Helijet" (Canada)
-CNK	Sunwest Home Aviation Ltd. "Chinook" (Canada)
-MDK	Medic Air "Air Doc"
-CYO	Air Transport "Coyote"
-MMZ	Euroatlantic Airways (Portugal)
-JUS	Usa Jet Airlines "Jet USA" (Belleville, MI)
-CGE	Nelson Aviation College "College"
-CJT	Cargojet "Cargojet" (Canada)
-BPA	Blue Panorama "Blue Jet"
-EMD	Eaglemed "Eaglemed"
-SNC	Air Cargo Carriers "Night Cargo"
-CWA	CanWestAir (Canada)
-OPT	Flight Options "Options" (Johnson City, NY)
-PUL	Ornge Air "PULSE" (Ontario)
-AVL	Aviation Adventures "Sky Ventures" (Manassas, VA)
-LBT	Nouvel Air Tunisie "Nouvelair"
-AMF	Ameriflight "Amflight" (Burbank, CA)
-RZO	Sata Internacional "Air Azores" (Portugal)
-NCT	NokScoot "BIG BIRD" (Bangkok, Thailand)
-PAG	Perimeter Aviation "Perimeter" (Canada)
-LCO	LAN Cargo "LAN Cargo" (Chile)
-TFR	Toll Priority "Toll Freight" (New Zealand)
-JAS	Jet Aviation Flight Services "JET SETTER" (Teterboro, NJ)
-ABX	ABX Air "Abex" (Wilmington, OH)
-DSM	LAN Argentina "LANAR" (Buenos Aires)
-COL	SC Aviation Inc. "COLONY" (Janesville, WI)
-PRE	Precision Aircraft Management "Precision" (Englewood, CO)
-CVA	Air Transport "Chatham"
-NGF	Air Charity Network "Angel Flight"
-PBR	Fast Air "Polar Bear" (Canada)
-CCM	Air Corsica "Corsica" (Ajaccio, Corsica)
-PHJ	Peach Jet (Georgia)
-VSL	Sky Jet "Velox" (Canada)
-EAL	Eastern "Eastern" (Miami)
-RPB	Aerorepublica "Aerorepublica"
-MNU	Elite Airways "MAINER" (Portland, ME)
-SAV	Sunair "Sunair" (Tauranga, New Zealand)
-SEY	Air Seychelles "Seychelles"
-GCT	GC Aviation "Gulf Coast"
-NUS	Northern Illinois Flight Center "Enjet" (Lake In The Hills, Illinois)
-THD	Thai Smile "Thai Smile"
-ELT	Elliott Aviation "Elliott"
-GAO	Braathens Regional "Golden" (Trollhättan)
-EIA	Evergreen International Airlines "Evergreen" (McMinnville, Oregon)
-ARA	Arik Air "Aerobeira"
-SUP	Aeronautical Charters "SUNSPEED"
-CTA	Aero Charter And Transport "Char-Tran"
-TAI	Taca International Airlines "Taca" (El Salvador)
-TCV	TACV "Caboverde"
-VET	Venture Aviation "POINSETT AIR" (Greenville, SC)
-WIF	Wideroe's Flyveselskap A/s "Wideroe" (Norway)
-UTY	Alliance Airlines "Unity"
-LAO	Lao "Lao"
-SFR	Safair "Cargo"
-RDN	Dinar "Aero Dinar"
-TTW	Tigerair "Smart Cat" (Taiwan)
-MDS	Mcneely Charter Service "Midsouth"
-WEW	West Wind Aviation "Westwind" (Canada)
-WBR	Air Choice One "Weber" (St. Louis, MO)
-SRY	Via Airlines "Stingray" (Sanford, FL)
-AUL	Nordavia Regional Airlines "Archangelsk Air"
-CSQ	IBC Airways "Chasqui"
-CDG	Shandong Airlines "Shandong"
-WAE	Western Air Express "Western Express"
-KHV	Cambodia Angkor Air "Cambodia Air" (Cambodia)
-SMR	Aircompany Somon Air LLC "SOMON AIR" (TAJIKISTAN )
-HPJ	Hop-a-Jet "Hopa-Jet" (Miami, FL)
-MGE	Aero-Micronesia "Magellan" (Danville, California)
-BLX	TUIfly Nordic "Bluescan" (Sweden)
-OKC	Private Jets "Thunder Wings" (Oklahoma City, OK)
-TPA	Transportes Aereos Mercantiles Panamericanos "Tampa"
-EDG	Jet Edge "JET EDGE" (Scottsdale, AZ)
-NSH	Gama Aviation (Waukegan, IL)
-WNE	Crush
-EVE	evelop! "EVELOP" (Palma de Mallorca)
-BHL	Bristow Helicopters "Bristow"
-SYR	Syrian Arab Airlines "Syrianair"
-AIP	Alpine Aviation "Alpine Air"
-PAO	Polynesian Airline Operations Ltd. "Polynesian"
-GUY	Air Guyane "Air Guyane"
-BYA	Berry Aviation "Berry"
-CTV	Citilink "Supergreen" (Jakarta, Indonesia)
-RSP	JetSuite Air "Red Stripe" (Medford, OR)
-ICL	CAL Cargo Airlines "CAL" (Tel Aviv)
-RCH	Air Mobility Command "Reach"
-HKE	Hong Kong Express Airways "HONGKONG SHUTTLE" (Hong Kong)
-NTW	Nationwide Air "Nationwide"
-SIY	Executive Aviation Corporation "Serenity" (Miami, FL)
-CHB	China West Air "West China" (Chongqing)
-LYM	Key Lime Air "Key Lime"
-ECJ	East Coast Jets, Inc "Eastcoast Jet"
-GDG	S. P. Aviation "Golden Gate"
-RLU	Rusline "Rusline Air" (Russia)
-UTP	Uni-topAirlines "UNITOP" (Wuhan, China)
-DQA	Maldivian "Island Aviation" (Maldives)
-SJJ	Spirit Jets "Spirit Jet"
-AIZ	Arkia Israel Inland Airlines "Arkia"
-MUI	Trans Air "Maui"
-DBC	Gemini Air "DIAMONDBACK" (Arizona)
-PSC	Pascan Aviation "Pascan" (Canada)
-LLM	Yamal Airlines "Yamal" (Salekhard, Russia)
-UBG	US-Bangla Airlines "Bangla Star" (Dhaka, Bangladesh)
-FLE	Flair Airlines "FLAIR" (Kelowna, BC)
-JRT	JetRight "JetRight" (Nashville)
-TGO	Canada - Transport Canada "Transport" (Canada)
-NSE	SATENA "SATENA" (Bogota)
-ERY	Sky Quest "Erie Shore" (Cleveland, OH)
-TNV	TransNorthern (Anchorage, Alaska)
-CDN	Canadian Helicopters "Canadian" (Canada)
-KOW	Baker Aviation, LLC "Rodeo" (Fort Worth, TX)
-CGB	Air Cargo Belize Limited "Cargo Belize"
-WIA	Windward Islands Airways International N.v. "Windward"
-ULA	UltraAir "Ultrajet" (Omaha, NE)
-PWA	Priester Aviation "Priester"
-RVP	Air Vip "Aerovip"
-FLI	Atlantic Airways "Faroeline"
-CGG	Walmart Aviation "Charge"
-CFC	Canadian Armed Forces "Canforce" (Canada)
-KFB	STAjets "Mission Bird"
-VOC	Volaris Costa Rica "Costa Rican" (San José, Costa Rica)
-NCR	National Cargo "National Cargo" (Orlando, FL)
-CBG	GX Airlines (Nanning Wuxu)
-CYT	Crystal Shamrock "Crystal-Air"
-PEV	Peoples Viennaline "PEOPLES" (Vienna)
-GPD	Tradewind "Goodspeed"
-PFT	Paragon Airways "Paragon Flight"
-RBG	Air Arabia Egypt "ARABIA EGYPT"
-CGH	Guizhou Airlines "Guizhou"
-RIX	Rectrix "Rectrix"
-TAE	Tame Ep "Tame"
-WBA	Nordic Regional Airlines "FINNCOMM"
-BKP	Bangkok "Bangkok Air"
-BOX	AeroLogic "German Cargo" (Frankfort Airport)
-TOK	PNG Air "BALUS"
-NOJ	NovaJet "NovaJet" (Mississauga, Ontario)
-PJC	Pittsburgh Jet Center "Pittsburgh Jet" (Pittsburgh, PA)
-VJT	Vistajet "Vista" (Canada)
-CGL	Seagle Air "Seagle"
-GTV	Empresa de Aviacion Aerogaviota "Gaviota"
-CDR	Bombardier Montreal "Canadair"
-CMF	Air Care Alliance "Compassion"
-EPA	Donghai Airlines (China)
-HGE	Martin's Famous Pastry Shoppe "Hoagie" (Chambersburg, PA)
-MLN	Corporate Air "Millennium" (West Mifflin, PA)
-EDR	Fly Always "BIRDVIEW" (Paramaribo, Suriname)
-MPH	Martinair Holland N.V. "Martinair" (Netherlands)
-UCM	University of Central Missouri "Mule Flight" (Warrensburg, MO)
-ARU	Aruba Airlines "Aruba" (Oranjestad)
-ANT	Air North Charter "Air North" (Canada)
-LRS	Sansa (Costa Rica)
-CNF	Canary Fly "Canary" (Gran Canaria)
-JSX	JetSuiteX (Irvine, CA)
-LKE	Lucky Air "LUCKY AIR" (China)
-AJT	Amerijet International "Amerijet" (Ft.Lauderdale, FL)
-DJR	Desert Jet "Desert Jet" (Thermal, CA)
-TAY	ASL Airlines Belgium "QUALITY" (Belgium)
-NIA	Nile Air "NILEBIRD"
-YZR	Yangtze River Express Airlines (China)
-NAA	Norwegian Air Argentina S.A. "NORUEGA" (Argentina)
-FEX	Flightexec Limited "Flightexec" (Canada)
-PXG	Aitheras Aviation Group
-AMU	Air Macau "Air Macau"
-AJI	Ameristar Jet Charter "Ameristar" (Dallas, TX)
-LGW	LGW "Walter"
-BBA	Bombardier "Bombardier"
-PHM	Petroleum Helicopters "Petroleum"
-GUN	Grant Aviation (Anchorage, AK)
-NMB	Air Namibia "Namibia" (Windhoek)
-QUE	Service Aerien Gouvernemental "Quebec" (Canada)
-RAX	Royal Air Freight "Air Royal" (Waterford, MI)
-VPE	VIVA PERU "VIVA PERU" (Peru)
-KNT	Flightpath Charter Airways "Kinetic"
-BOG	Live Oak Banking "Bird Dog" (Wilmington, NC)
-BHS	Bahamasair Holdings Ltd. "Bahamas" (Bahamas)
-CME	Prince Edward Air "Comet" (Canada)
-NCA	Nippon Cargo "Nippon Cargo" (Japan)
-DHK	DHL Air Ltd "World Express"
-XPD	Expedition Airways "Expedition"
-SAT	Servico Acoreano de Transportes Aereos - EP "Sata"
-CVF	Dassault Falcon Jet "Cloverleaf" (S. Hackensack, NJ)
-NCN	National Airlines "National"
-SCM	American Jet International "Screamer" (Houston, TX)
-PFY	Pel-Air "PELFLIGHT"
-OHY	Onur Hava Tasimacilik Awms "Onur Air"
-IAX	Island Express Air "Abbotsford Air"
-EGC	FIRST WING AIRCRAFT CHARTER AND MAINTENANCE "EAGLE CREEK" (UNITED STATES)
-HFY	Hi Fly "SKY FLYER" (Portugal)
-LRC	Lineas Aereas Costarricenses (LACSA) "Lacsa" (Costa Rica)
-IRC	Iran Asseman Airlines
-CFL	Swedish Airlines "Swedish"
-IRO	Csa Air "Iron Air"
-SDU	Dumont "Santos" (New Castle, DE)
-MWT	Midwest Aviation Division "Midwest"
-FET	Old Dominion Freight Line "FREIGHT LINE" (UNITED STATES)
-TTE	Avcenter "Teton"
-XLF	XL Airways France "Starway" (France)
-GTH	Meridian Air Charter "Gotham"
-FSR	Flightstar Corp "Flightstar"
-NOK	Nok "Nok Air" (Thailand)
-RAG	Xstrata Canada Corporation "Raglan"
-ACI	Air Caledonie International "Aircalin"
-SIS	Silver Air "Silver Speed" (Fresno, California)
-VTS	Everts Air Cargo "Everts" (Fairbanks, AK)
-PLR	Northwestern Air Lease Ltd. "Polaris" (Canada)
-BKS	Aviaexpress Cruise "Aviacruise"
-VAS	Atran-Aviatrans Cargo "Atran"
-CGM	Cargoman Limited "Hotel Charlie"
-CLU	Cargologicair
-SHE	Shell Aircraft "Shell" (United Kingdom)
-WWW	Janet "Janet" (Las Vegas, NV)
-CFJ	Fujian "Fujian"
-CFN	Church Fenton Ftu "Church Fenton"
-SLQ	Skylink Express "SKYLINK" (Toronto, ON)
-CFT	Jet Freighters "Casper Freight"
-KDC	KD Air "Kay Dee" (Canada)
-JTL	Jet Linx Aviation LLC "Jetlinx" (Omaha, Nebraska)
-JDC	Deere And Company "John Deere" (Moline, IL)
-IDX	Indonesia AirAsia X "Red Phoenix" (Jakarta)
+AAL American Airlines
+SWA Southwest
+UAL United
+DAL Delta
+SKW SkyWest
+RYR Ryanair
+THY Turkish Airlines
+QTR Qatar Airways
+BAW British Airways
+JBU JetBlue
+UAE Emirates
+EZY easyJet
+ASA Alaska Airlines
+AFL Aeroflot
+DLH Lufthansa
+AFR Air France
+JZA Jazz Air
+RPA Republic
+ACA Air Canada
+CPA Cathay Pacific
+SIA Singapore Airlines
+ENY Envoy Air
+ASH Mesa
+GLO Gol Transportes Aereos
+UPS United Parcel Service
+EJA NetJets Aviation
+WJA WestJet
+KAL Korean Air Lines Co.
+KLM KLM
+NKS Spirit
+EDV Endeavor Air
+ETD Etihad Airways
+CCA Air China
+TAM LATAM Brasil
+IBE Iberia
+WZZ Wizz Air
+SVA Saudia
+FDX FedEx
+THA Thai Airways
+IGO IndiGo
+CSN China Southern Airlines
+JIA PSA Airlines
+QFA Qantas
+AVA Avianca
+IBK Norwegian Air International
+ASQ ExpressJet
+CES China Eastern
+SLI Aeroméxico Connect
+FFT Frontier
+AUA Austrian Airlines
+SAS SAS
+AZU Azul Brazilian Airlines
+VOI Volaris
+VLG Vueling Airlines
+LOT Lot - Polskie Linie Lotnicze
+CMP Copa Airlines
+NAX Norwegian Air Shuttle
+AAR Asiana
+FIN Finnair
+TAP Transportes Aereos Portugueses
+HAL Hawaiian Airlines
+ANA All Nippon
+HVN Vietnam Airlines
+PGT Pegasus Airlines
+SWR Swiss
+AZA Alitalia
+VOZ Virgin Australia
+HOP HOP!
+JAL Japan Airlines
+ARG Aerolineas Argentinas
+CPZ Compass Airlines
+JST Jetstar
+PAL Philippine Air Lines
+AMX AeroMéxico
+EVA EVA Air
+AIJ Interjet
+GIA Garuda Indonesia
+ONE Avianca Brazil
+AEA Air Europa
+CHH Hainan Airlines
+ANZ Air New Zealand
+AIC Air India
+CAL China Airlines
+VIR Virgin Atlantic
+MAS Malaysia Airlines
+TOM Thomson
+EIN Aer Lingus
+AWI Air Wisconsin
+QXE Horizon
+ABY Air Arabia
+AUI Ukraine International
+CFG Condor
+ETH Ethiopian Airlines
+BEE Flybe
+SDM Rossiya Airlines
+WEN WestJet Encore
+EJM Executive Jet Management
+SWG Sunwing
+XAX AirAsia X
+JJA Jeju Air
+TGW Scoot
+AXM AirAsia
+NZM Mount Cook
+LOF Trans States
+LAN LAN Airlines
+GJS GoJet
+SVR Ural
+GTI Atlas Air
+FDB FlyDubai (United Arab Emirates)
+GFA Gulf Air
+VIV VivaAerobus
+AUT Austral Lineas Aereas
+ROU Air Canada Rouge
+PBD Pobeda
+CEB Cebu Pacific Air
+BTI Air Baltic
+SAA South African Airways
+JAI Jet Airways
+OMA Oman Air
+ICE Icelandair
+JNA Jin Air
+ALK SriLankan Airlines
+VJC VietJet Air
+QLK QantasLink
+CFE Cityflyer Express
+SBI SAirlines
+RAM Royal Air Maroc
+AXB Air India Express
+UTA UTair
+POE Porter
+MXD Malindo Air
+CON Conoco Phillips
+LPE LAN Peru
+RXA Regional Express Airlines
+TWB Tway Air
+CLH Lufthansa Cityline
+TLM Thai Lion
+IBS Iberia Express
+CSC Sichuan Airlines
+SKV Sky Regional
+XOJ XOJET
+UCA CommutAir
+NRS Norwegian Air
+ELY El Al
+WOW Wow Air
+LXJ Flexjet
+DCM fltplan.com
+GAJ Wheels Up - Gama Aviation
+DAH Air Algerie
+SKU Sky Airline
+BEL Brussels Airlines
+BTK Batik Air
+EWG Eurowings
+KZR Air Astana
+CNS Cobalt Air
+KAC Kuwait Airways Corporation
+TCX Thomas Cook
+MEA Middle East Airlines - Air Liban
+TRA Transavia Holland B.v.
+KAP Cape Air
+SEJ SpiceJet
+JON Joon
+KTK Azur Air
+AIQ Thai AirAsia
+ANE Air Nostrum
+GLP Globus
+RLK Air Nelson
+MSR Egypt Air
+PDT Piedmont
+KNE Flynas
+TSC Air Transat
+CXA XiamenAir
+BOE Boeing
+ESR Eastarjet
+LNI Lion Air (Indonesia)
+PIA Pakistan International Airlines Corporation (PIA)
+ARE LAN Colombia
+CSA Czech Airlines
+CRK Hong Kong Airlines
+CSS SF Airlines
+JAF TUI Fly
+AAY Allegiant Air
+PGA Portugalia
+GMI Germania Fluggesellschaft Koln
+ATN Air Transport International Llc
+LGL Luxair
+ROT TAROM
+BWA Caribbean Airlines
+CKS Kalitta Air
+FJI Fiji Airways
+UZB Uzbekistan Airways
+ABL Air Busan
+BCY Cityjet
+TAX Thai AirAsia X
+BBC Bangladesh Biman
+TAR Tunis Air
+KQA Kenya Airways
+CLX Cargolux Airlines International
+BMS Blue Air
+FAB First Air
+GGN Air Georgian
+DPJ Delta Private Jets
+ABW AirBridgeCargo
+CQH Spring Airlines
+ISS Air Italy
+SLK Silkair
+BTQ Boutique Air
+SXS Sun Express (Turkey)
+JZR Jazeera Airways
+SCX Sun Country Airlines
+HAG Hageland Aviation Services
+TWY Sunset Aviation, LLC
+BRU Belavia
+GOW GoAir
+AEE Aegean Airlines
+WSG Wasaya
+MPE Canadian North Airlines
+SWQ Swift Air
+AJX Air Japan
+IWY interCaribbean Airways
+CSH Shanghai Airlines
+CRQ Air Creebec
+DTA TAAG Angola Airlines
+VTA Air Tahiti
+ASV Air Seoul
+MAC Air Arabia Maroc
+PCO Pacific Coastal Airlines
+ASL AIR SERBIA
+HDA Cathay Dragon
+GWI Germanwings
+ADR Adria
+CYL Alitalia CityLiner
+AHY Azerbaijan Airlines
+PAC Polar Air Cargo
+STK Stobart Air
+EDW Edelweiss Air AG
+BOV Boliviana de Aviación
+TMC Travel Management Company. LTD
+TAO Transportes Aeromar
+TVF Transavia France
+SHU Aurora
+LAK Red Wing
+CRL Corsair International
+EZS easyJet Switzerland
+MAU Air Mauritius
+FRG Freight Runners Express
+SFY FlightSafety Academy
+BRG Bering Air
+LOG Loganair
+VTM Aeronaves TSM
+AAF Aigle Azur
+REU Air Austral
+WSW Swoop Airlines
+SOO Southern Air
+CAW Comair
+TFL TUI Airlines
+RPN US DHS ICE
+TJT Twin Jet (France)
+TYA Nordstar
+AIE Air Inuit
+EAY Aero Airlines (Estonia)
+RJA Royal Jordanian
+DKH Juneyao Airlines
+RVF Ravn Alaska
+NDU University of North Dakota
+VOE Volotea
+IRM Mahan Air
+THU Thunder
+FDY Southern Airways Express
+CIT Zanesville Aviation
+FAD flyadeal
+BSK Miami Air International
+EXS Jet 
+IAW Iraqi Airways
+OAE Omni Air Express
+SJY Sriwijaya Air
+XSR Executive AirShare (Wichita, KS)
+CSJ Castle Aviation
+CAO Air China Cargo
+HYD Hydro-Quebec
+QJE QantasLink
+AER Alaska Central Express
+TGZ Georgian Airways
+LDM Laudamotion
+GEC Lufthansa Cargo
+ABQ Airblue
+VTE Contour Aviation
+BMR BMI Regional
+VKG Thomas Cook
+MLD Air Moldova
+AMC Air Malta
+RNA Royal Nepal Airlines
+APJ Peach Aviation
+HGT GMJ Air Shuttle
+MHO Mokulele
+DLA Air Dolomiti
+LNE LAN Ecuador
+NDL Chrono Aviation
+TFX Toll Aviation
+SIL Silver Airways
+EZE Eastern Airways
+AHK Ahk Air Hong Kong Limited
+KKK AtlasGlobal
+KMI K-Mile Air
+IAD AirAsia India
+LIA Leeward Islands Air Transport
+SGQ SaudiGulf Airlines
+CAV Calm Air
+CFP Compania de Aviacion
+WHT White
+GLG Aerogal Aerolineas Galapagos (Ecuador)
+SDA Sounds Air
+JSA Jetstar Asia (Singapore)
+TUI TuiFly
+CGT CNG-Transavia, Joint-Stock Company
+RBA Royal Brunei
+NAC Northern Air Cargo
+PVL PAL Airlines
+BLU SolutionsAir
+OAW Helvetic (Switzerland)
+GBX Gb Airlink
+PRY Priority Air Charter, LLC
+GUG Aviateca
+GLT Aero Charter
+CGC Cal Gulf Aviation
+GLF Gulfstream Aerospace
+TGG Tigerair Australia
+VDA Volga-dnepr
+NCB North Cariboo Flying Service Ltd.
+JJP Jetstar Japan
+AUR Aurigny Air Services Ltd.
+MAL Morningstar Air
+IRA Iran National Airlines Corp.
+FTH Mountain Aviation
+WCC West Coast Charters
+BEC Berkut Air (Astana, Kazakhstan)
+FWI Air Caraïbes
+TVS Smart Wings
+NSS Northstar Aviation
+CBJ Beijing Capital Airlines
+SYL Yakutia Airlines
+AZG Silk Way West
+LZB Bulgaria Air
+CFS Empire
+GCR Tianjin Airlines
+SSF Severstal Air Company
+KBA Kenn Borek Air Ltd.
+BLS Bearskin Lake Air Service Limited
+PVN Peruvian Airlines
+BEK Berkhut Air (Kazakhstan)
+FBU French Blue
+SCW Braathens Regional Aviation
+ROI Avior Airlines
+SXD SunExpress Deutschland
+OAL Olympic Air
+CWG Clear Wing
+VNL Vanilla
+MTN Mountain Air Cargo
+CKK China Cargo
+WSN Advanced Air
+CTL Central Air Southwest, Inc.
+KFS Kalitta Charters
+VHA VH-Air Industrie
+BOS OpenSkies
+EWE East West European
+GLR Central Mountain
+CSZ Shenzhen Airlines
+CGA Congo Airways
+CGR Compagnia Generale Ripreseaeree Spa
+RWZ Red Wings Airlines
+NOA National Oceanic And Atmospheric Administration
+SCR Jetstar
+DTH Tassili (Algeria)
+NLA PenAir
+CFR AFRICA ONE (DEMOCRATIC REPUBLIC OF CONGO)
+TKM JM Family Aviation
+CUB Cubana de Aviacion
+TPU Taca Peru
+JLG Jet Logistics
+NOS Neos
+JBA Helijet
+CNK Sunwest Home Aviation Ltd.
+MDK Medic Air
+CYO Air Transport
+MMZ Euroatlantic Airways (Portugal)
+JUS Usa Jet Airlines
+CGE Nelson Aviation College
+CJT Cargojet
+BPA Blue Panorama
+EMD Eaglemed
+SNC Air Cargo Carriers
+CWA CanWestAir (Canada)
+OPT Flight Options
+PUL Ornge Air
+AVL Aviation Adventures
+LBT Nouvel Air Tunisie
+AMF Ameriflight
+RZO Sata Internacional
+NCT NokScoot
+PAG Perimeter Aviation
+LCO LAN Cargo
+TFR Toll Priority
+JAS Jet Aviation Flight Services
+ABX ABX Air
+DSM LAN Argentina
+COL SC Aviation Inc.
+PRE Precision Aircraft Management
+CVA Air Transport
+NGF Air Charity Network
+PBR Fast Air
+CCM Air Corsica
+PHJ Peach Jet (Georgia)
+VSL Sky Jet
+EAL Eastern
+RPB Aerorepublica
+MNU Elite Airways
+SAV Sunair
+SEY Air Seychelles
+GCT GC Aviation
+NUS Northern Illinois Flight Center
+THD Thai Smile
+ELT Elliott Aviation
+GAO Braathens Regional
+EIA Evergreen International Airlines
+ARA Arik Air
+SUP Aeronautical Charters
+CTA Aero Charter And Transport
+TAI Taca International Airlines
+TCV TACV
+VET Venture Aviation
+WIF Wideroe's Flyveselskap A/s
+UTY Alliance Airlines
+LAO Lao
+SFR Safair
+RDN Dinar
+TTW Tigerair
+MDS Mcneely Charter Service
+WEW West Wind Aviation
+WBR Air Choice One
+SRY Via Airlines
+AUL Nordavia Regional Airlines
+CSQ IBC Airways
+CDG Shandong Airlines
+WAE Western Air Express
+KHV Cambodia Angkor Air
+SMR Aircompany Somon Air LLC
+HPJ Hop-a-Jet
+MGE Aero-Micronesia
+BLX TUIfly Nordic
+OKC Private Jets
+TPA Transportes Aereos Mercantiles Panamericanos
+EDG Jet Edge
+NSH Gama Aviation (Waukegan, IL)
+WNE Crush
+EVE evelop!
+BHL Bristow Helicopters
+SYR Syrian Arab Airlines
+AIP Alpine Aviation
+PAO Polynesian Airline Operations Ltd.
+GUY Air Guyane
+BYA Berry Aviation
+CTV Citilink
+RSP JetSuite Air
+ICL CAL Cargo Airlines
+RCH Air Mobility Command
+HKE Hong Kong Express Airways
+NTW Nationwide Air
+SIY Executive Aviation Corporation
+CHB China West Air
+LYM Key Lime Air
+ECJ East Coast Jets, Inc
+GDG S. P. Aviation
+RLU Rusline
+UTP Uni-topAirlines
+DQA Maldivian
+SJJ Spirit Jets
+AIZ Arkia Israel Inland Airlines
+MUI Trans Air
+DBC Gemini Air
+PSC Pascan Aviation
+LLM Yamal Airlines
+UBG US-Bangla Airlines
+FLE Flair Airlines
+JRT JetRight
+TGO Canada - Transport Canada
+NSE SATENA
+ERY Sky Quest
+TNV TransNorthern (Anchorage, Alaska)
+CDN Canadian Helicopters
+KOW Baker Aviation, LLC
+CGB Air Cargo Belize Limited
+WIA Windward Islands Airways International N.v.
+ULA UltraAir
+PWA Priester Aviation
+RVP Air Vip
+FLI Atlantic Airways
+CGG Walmart Aviation
+CFC Canadian Armed Forces
+KFB STAjets
+VOC Volaris Costa Rica
+NCR National Cargo
+CBG GX Airlines (Nanning Wuxu)
+CYT Crystal Shamrock
+PEV Peoples Viennaline
+GPD Tradewind
+PFT Paragon Airways
+RBG Air Arabia Egypt
+CGH Guizhou Airlines
+RIX Rectrix
+TAE Tame Ep
+WBA Nordic Regional Airlines
+BKP Bangkok
+BOX AeroLogic
+TOK PNG Air
+NOJ NovaJet
+PJC Pittsburgh Jet Center
+VJT Vistajet
+CGL Seagle Air
+GTV Empresa de Aviacion Aerogaviota
+CDR Bombardier Montreal
+CMF Air Care Alliance
+EPA Donghai Airlines (China)
+HGE Martin's Famous Pastry Shoppe
+MLN Corporate Air
+EDR Fly Always
+MPH Martinair Holland N.V.
+UCM University of Central Missouri
+ARU Aruba Airlines
+ANT Air North Charter
+LRS Sansa (Costa Rica)
+CNF Canary Fly
+JSX JetSuiteX (Irvine, CA)
+LKE Lucky Air
+AJT Amerijet International
+DJR Desert Jet
+TAY ASL Airlines Belgium
+NIA Nile Air
+YZR Yangtze River Express Airlines (China)
+NAA Norwegian Air Argentina S.A.
+FEX Flightexec Limited
+PXG Aitheras Aviation Group
+AMU Air Macau
+AJI Ameristar Jet Charter
+LGW LGW
+BBA Bombardier
+PHM Petroleum Helicopters
+GUN Grant Aviation (Anchorage, AK)
+NMB Air Namibia
+QUE Service Aerien Gouvernemental
+RAX Royal Air Freight
+VPE VIVA PERU
+KNT Flightpath Charter Airways
+BOG Live Oak Banking
+BHS Bahamasair Holdings Ltd.
+CME Prince Edward Air
+NCA Nippon Cargo
+DHK DHL Air Ltd
+XPD Expedition Airways
+SAT Servico Acoreano de Transportes Aereos - EP
+CVF Dassault Falcon Jet
+NCN National Airlines
+SCM American Jet International
+PFY Pel-Air
+OHY Onur Hava Tasimacilik Awms
+IAX Island Express Air
+EGC FIRST WING AIRCRAFT CHARTER AND MAINTENANCE
+HFY Hi Fly
+LRC Lineas Aereas Costarricenses (LACSA)
+IRC Iran Asseman Airlines
+CFL Swedish Airlines
+IRO Csa Air
+SDU Dumont
+MWT Midwest Aviation Division
+FET Old Dominion Freight Line
+TTE Avcenter
+XLF XL Airways France
+GTH Meridian Air Charter
+FSR Flightstar Corp
+NOK Nok
+RAG Xstrata Canada Corporation
+ACI Air Caledonie International
+SIS Silver Air
+VTS Everts Air Cargo
+PLR Northwestern Air Lease Ltd.
+BKS Aviaexpress Cruise
+VAS Atran-Aviatrans Cargo
+CGM Cargoman Limited
+CLU Cargologicair
+SHE Shell Aircraft
+WWW Janet
+CFJ Fujian
+CFN Church Fenton Ftu
+SLQ Skylink Express
+CFT Jet Freighters
+KDC KD Air
+JTL Jet Linx Aviation LLC
+JDC Deere And Company
+IDX Indonesia AirAsia X
