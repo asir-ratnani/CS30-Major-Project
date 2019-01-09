@@ -18,6 +18,10 @@ let state = 1;
 let status;
 let font_1, font_2, font_3;
 let airport_code;
+let codes;
+let cyxe, cyqr, cyyz, cyyc, cyvr, cyul;
+let klax, kjfk, kord, egll, lfpg, omdb, yssy;
+
 
 // Ignore the following code, this is to be used for pulling live data from FlightAware.
 // httpGet("http://flightxml.flightaware.com/json/FlightXML3/METHODNAME");
@@ -29,13 +33,27 @@ let airport_code;
 
 // let url = http://flightxml.flightaware.com/json/FlightXML3/METHODNAME
 // Username = "********"
-// API Key = "***********"
+// API Key = "fc2a7d607c39780ddb797b27a76572a79d82ff12"
 // fxmlUrl = "https://flightxml.flightaware.com/json/FlightXML3/"
 
 // let url = 'https://flightxml.flightaware.com/json/FlightXML3/AirportBoards?airport_code=CYXE'
 
 function preload() {
-  info = loadJSON('assets/Toronto.json')
+  cyyz = loadJSON('assets/Toronto.json')
+  cyxe = loadJSON('assets/Saskatoon.json')
+  cyqr = loadJSON('assets/Regina.json')
+  cyyc = loadJSON('assets/Calgary.json')
+  cyvr = loadJSON('assets/Vancouver.json')
+  cyul = loadJSON('assets/Montreal.json')
+  klax = loadJSON('assets/Los Angeles.json')
+  kjfk = loadJSON('assets/New York JFK.json')
+  kord = loadJSON('assets/Chicago.json')
+  egll = loadJSON('assets/London.json')
+  lfpg = loadJSON('assets/Paris.json')
+  omdb = loadJSON('assets/Dubai.json')
+  yssy = loadJSON('assets/Sydney.json')
+  
+  
   codes = loadStrings('assets/AirlineCodes.txt')
   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
   font_2 = loadFont("assets/famirids/Famirids..ttf");
@@ -44,9 +62,10 @@ function preload() {
 
 function setup() {
   createCanvas(1700, 900);
+  setupCityMenu();
   setAirlineCodes();
   cellSize = height / rows;
-  // grid = create2dArray(cols, rows);
+
   x = 10;
   y = 45;
   
@@ -56,21 +75,6 @@ function setup() {
   arrivals = info.AirportBoardsResult.arrivals.flights;
   scheduled = info.AirportBoardsResult.scheduled.flights;
   enroute = info.AirportBoardsResult.enroute.flights;
-
-  // airlineCodes.set("ACA", "Air Canada");
-  // airlineCodes.set("JZA", "Air Canada Jazz");
-  // airlineCodes.set("WJA", "WestJet");
-  // airlineCodes.set("WEN", "Westjet Encore");
-  // airlineCodes.set("SKW", "Delta");
-  // airlineCodes.set("DAL", "Delta");
-  // airlineCodes.set("EDV", "Delta");
-  // airlineCodes.set("CJT", "CargoJet");
-  // airlineCodes.set("SWG", "Sunwing");
-  // airlineCodes.set("SLQ", "Express Air");
-  // airlineCodes.set("WEW", "Transwest Air");
-  // airlineCodes.set("SLG", "Transwest Air");
-
-
 
   
 
@@ -229,3 +233,43 @@ function mouseClicked() {
   // }
 }
 
+function setAirlineCodes() {
+  for (let i =0; i < codes.length; i ++) {
+    let airCode = codes[i].split(" ")[0];
+    let airlineName = codes[i].substr(4, );
+
+
+    airlineCodes.set(airCode, airlineName);
+
+  }
+}
+
+function setupCityMenu() {
+  dropdown = createSelect();
+  dropdown.position(10, 10);
+  dropdown.option('Saskatoon');
+  dropdown.option('Toronto');
+  // dropdown.option('Regina');
+  // dropdown.option('Calgary');
+  // dropdown.option('Vancouver');
+  // dropdown.option('Montreal');
+  // dropdown.option('Los Angeles');
+  // dropdown.option('New York (JFK)');
+  // dropdown.option('Chicago');
+  // dropdown.option('London');
+  // dropdown.option('Paris');
+  // dropdown.option('Dubai');
+  // dropdown.option('Sydney');
+
+  dropdown.changed(mySelectEvent);
+}
+function mySelectEvent() {
+  let item = dropdown.value();
+  if (item === "Saskatoon") {
+    info = cyxe;
+  }
+  else if (item === "Toronto") {
+    info = cyyz;
+  }
+  redraw();
+}
