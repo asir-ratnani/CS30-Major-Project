@@ -21,6 +21,7 @@ let airport_code;
 let codes;
 let cyxe, cyqr, cyyz, cyyc, cyvr, cyul;
 let klax, kjfk, kord, egll, lfpg, omdb, yssy;
+let departureButton, scheduledButton, arrivalButton;
 
 
 function preload() {
@@ -49,7 +50,7 @@ function preload() {
 
 function setup() {
   createCanvas(2000, 900);
-  
+  drawButtons();
   setupCityMenu();
   info = cyxe;
   setAirlineCodes();
@@ -224,22 +225,22 @@ function displayGrid() {
 }
 
 
-function keyPressed() {
-  if (state === 1) {
-    state = 2;
-  }
-  else if(state === 2) {
-    state = 3;
-  }
-  else if (state === 3) {
-    state = 1;
-  }
-  // else if (state === 4) {
-  //   state = 1;
-  // }
+// function keyPressed() {
+//   if (state === 1) {
+//     state = 2;
+//   }
+//   else if(state === 2) {
+//     state = 3;
+//   }
+//   else if (state === 3) {
+//     state = 1;
+//   }
+//   // else if (state === 4) {
+//   //   state = 1;
+//   // }
 
-  loop();
-}
+//   loop();
+// }
 
 function setAirlineCodes() {
   for (let i =0; i < codes.length; i ++) {
@@ -317,4 +318,37 @@ function mySelectEvent() {
   
   redraw();
 
+}
+
+function drawButtons() {
+
+  let col = color(255, 0, 0, 10);
+  scheduledButton = createButton('Scheduled');
+  departureButton = createButton('Departures');
+  arrivalButton = createButton('Arrivals');
+
+  scheduledButton.position (width - 500, height-200);
+  departureButton.position (width - 300, height-200);
+  arrivalButton.position (width - 100, height-200);
+
+  scheduledButton.style(col, col);
+  
+
+
+  scheduledButton.mousePressed(scheduledState);
+  departureButton.mousePressed(departureState);
+  arrivalButton.mousePressed(arrivalState);
+}
+
+function scheduledState() {
+  state = 1;
+  loop();
+}
+function departureState() {
+  state = 2;
+  loop();
+}
+function arrivalState() {
+  state = 3;
+  loop();
 }
