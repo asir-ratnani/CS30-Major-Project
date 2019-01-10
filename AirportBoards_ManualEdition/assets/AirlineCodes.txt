@@ -173,7 +173,7 @@ CXA XiamenAir
 BOE Boeing
 ESR Eastarjet
 LNI Lion Air (Indonesia)
-PIA Pakistan International Airlines Corporation (PIA)
+PIA Pakistan International Airlines
 ARE LAN Colombia
 CSA Czech Airlines
 CRK Hong Kong Airlines
@@ -182,7 +182,7 @@ JAF TUI Fly
 AAY Allegiant Air
 PGA Portugalia
 GMI Germania Fluggesellschaft Koln
-ATN Air Transport International Llc
+ATN Air Transport International 
 LGL Luxair
 ROT TAROM
 BWA Caribbean Airlines
@@ -308,7 +308,7 @@ SGQ SaudiGulf Airlines
 CAV Calm Air
 CFP Compania de Aviacion
 WHT White
-GLG Aerogal Aerolineas Galapagos (Ecuador)
+GLG Aerogal Aerolineas Galapagos 
 SDA Sounds Air
 JSA Jetstar Asia (Singapore)
 TUI TuiFly
@@ -345,7 +345,7 @@ CFS Empire
 GCR Tianjin Airlines
 SSF Severstal Air Company
 KBA Kenn Borek Air Ltd.
-BLS Bearskin Lake Air Service Limited
+BLS Bearskin Lake Air Service 
 PVN Peruvian Airlines
 BEK Berkhut Air (Kazakhstan)
 FBU French Blue
@@ -368,7 +368,7 @@ CSZ Shenzhen Airlines
 CGA Congo Airways
 CGR Compagnia Generale Ripreseaeree Spa
 RWZ Red Wings Airlines
-NOA National Oceanic And Atmospheric Administration
+NOA National Oceanic And Atmospheric Airline
 SCR Jetstar
 DTH Tassili (Algeria)
 NLA PenAir
@@ -489,7 +489,7 @@ TNV TransNorthern (Anchorage, Alaska)
 CDN Canadian Helicopters
 KOW Baker Aviation, LLC
 CGB Air Cargo Belize Limited
-WIA Windward Islands Airways International N.v.
+WIA Windward Islands Airways
 ULA UltraAir
 PWA Priester Aviation
 RVP Air Vip
@@ -535,7 +535,7 @@ AJT Amerijet International
 DJR Desert Jet
 TAY ASL Airlines Belgium
 NIA Nile Air
-YZR Yangtze River Express Airlines (China)
+YZR Yangtze River Express
 NAA Norwegian Air Argentina S.A.
 FEX Flightexec Limited
 PXG Aitheras Aviation Group
