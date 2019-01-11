@@ -2,8 +2,12 @@
 // Asir Ratnani
 // December 11, 2018
 //
-// Extra for Experts:
-// 
+// Nice to Have List:
+// - Live pull from server
+// - Format buttons to make it look nicer
+// - Format page to make it look nicer
+// - Add in window resizing (aka no values in width and height)
+// - Optimize for mobile devices
 
 let widths = [475,330,175,125,125,250];
 let airlineCodes = new Map ();
@@ -67,7 +71,7 @@ function draw() {
   textFont(font_1);
   textSize(35);
   textAlign(CENTER);
-  fill(12,56,255);
+  fill(125,78,255);
   text("Airport Boards", width - 300, 175);
   text ("Choose your city below", width - 300, 225);
 
@@ -84,7 +88,7 @@ function draw() {
 function determineState() {
   if (state === 1) {
     status = scheduled;
-    fill(255, 137, 12);
+    fill(0, 225, 60);
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
@@ -101,7 +105,7 @@ function determineState() {
   else if (state === 2) {
     status = departures;
 
-    fill(255, 137, 12);
+    fill(0, 255, 60);
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
@@ -117,7 +121,7 @@ function determineState() {
   else if (state === 3) {
     status = arrivals;
 
-    fill(255, 137, 12);
+    fill(0, 255, 60);
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
@@ -171,7 +175,7 @@ function displayJSON() {
           fill(255,0,0);
         }
         else {
-          fill(200,200,20);
+          fill(235,175,5);
         }
 
         if (status[i].destination.city === "" || status[i].origin.city === "") {
@@ -331,7 +335,7 @@ function drawButtons() {
   departureButton.position (width - 300, height-200);
   arrivalButton.position (width - 100, height-200);
 
-  scheduledButton.style(col, col);
+  scheduledButton.style('#ff00ff', col);
   
 
 
