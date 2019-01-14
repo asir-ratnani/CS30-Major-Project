@@ -40,22 +40,30 @@ function preload() {
   flight_6 = loadJSON("assets/UA19.json");
   flight_7 = loadJSON("assets/WEN3369.json");
   flight_8 = loadJSON("assets/WS601.json");
+
+
 }
   
 function setup() {
   createCanvas(windowWidth, windowHeight);
   alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
   makeDate();
+  makeInputBox();
 
-  
 }
+
+
 
 function draw() {
-  background(220);
-  makeInputBox();
-  displayFlightInfo(todayFlightList[0]);
-}
+  
+  
+  if (todayFlightList.length > 0) {
+    background(75);
+    displayFlightInfo(todayFlightList[0]);
+  }
+  listExamples();
 
+}
 function makeDate(){
   if (month() < 10) {
     m = "0" + month();
@@ -78,13 +86,13 @@ function makeDate(){
 
 function checkFlight(){
   for (let i = 0; i < flightInfo.FlightInfoStatusResult.flights.length; i++) {
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === currentDate) {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/13") {
       todayFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === nextDate){
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/14"){
       nextFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === previousDate) {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/12") {
       previousFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
     // else {
@@ -146,30 +154,32 @@ function saveFlight() {
     flightInfo = flight_8;
     checkFlight();
   }  
-  else {
-    fill(0);
-    textSize(15);
-    fill(0,0,255);
-
-    header_1 = createElement("h1","Oops, We can't seem to find that flight, Why don't you try again?");
-    header_1.position(120, 200);
-    header_1.style('font-size', 5);
-  }
 }
 
 function displayFlightInfo(ident) {
- flightNum = ident.airline_iata + ident.flightnumber;
- origin = ident.origin.city;
- originCode = ident.origin.code;
- destination = ident.destination.city;
- destinationCode = ident.destination.code;
+  fill(0);
+  textSize(15);
+
+  flightNum = ident.airline_iata + ident.flightnumber;
+  origin = ident.origin.city;
+  originCode = ident.origin.code;
+  destination = ident.destination.city;
+  destinationCode = ident.destination.code;
 
 
 
- text(flightNum + " from " + origin + " to " + destination, 125,125);
- 
- if (ident.status === "Scheduled") {
-   text("is scheduled to depart at " + ident.estimated_departure_time.time + " (" + ident.estimated_departure_time.tz + ") " + "and is scheduled", 125, 140)
-   text("to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + "). ", 125, 155);
+  text(flightNum + " from " + origin + " to " + destination, 125,125);
+  if (ident.status === "Scheduled") {
+    text("is scheduled to depart at " + ident.estimated_departure_time.time + " (" + ident.estimated_departure_time.tz + ") " + "and is scheduled", 125, 140)
+    text("to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + "). ", 125, 155);
   }
+  else {
+    text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and has arrived in  \n" + destination + " at " + ident.actual_arrival_time.time + " (" + ident.actual_arrival_time.tz + ") ", 125, 140);
+  }
+}
+
+function listExamples() {
+  fill(255);
+  textSize(32);
+  text("Examples", width-250, 100);
 }
