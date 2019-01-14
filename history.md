@@ -1,5 +1,11 @@
 # Major Project History
 
+# November 13, 2018
+ - Created prototype Airport Boards- Live Edition (2d-Array Assignment)
+
+# November 16, 2018
+ - Completed Airport Boards - Live Edition (2d-Array Assignment)
+
 # December 11, 2018
  - Created Major Project proposal, including need to have list and nice to have list
 
@@ -8,5 +14,11 @@
 
 # January 9, 2019
  - Completed Airport Boards - Manual Edition
+
+# January 12/13, 2019
+ - Completed prototype for Flight Status - Manual Edition via Ident.
+ 
+ - Note: GitHub commit error, wrong date was written in the commit, Should have been Jan 12/13.
+
 
  
