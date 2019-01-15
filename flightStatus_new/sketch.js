@@ -193,21 +193,32 @@ function displayFlightInfo(ident) {
     destination = ident.destination.city;
     destinationCode = ident.destination.code;
     let depSplit = ident.status.split(" ");
+    
+    // if (ident.status !== undefined) {
+    //   let depSplit = ident.status.split(" ");
+    //   if (depSplit[0] === "On" && depSplit[1] === "The" && depSplit[2] === "Way!") {
+    //     text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and is", width/2,height/2+100);
+    //     text("scheduled to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + ") ", width/2, height/2+135);
+    //   }
+    // }
+    
 
-    text(flightNum + " from " + origin + " to " + destination, width/2,height/2 + 75);
+    text(flightNum + " from " + origin + " to " + destination, width/2,height/2 + 65);
     if (ident.status === "Scheduled") {
-      text("is scheduled to depart at " + ident.estimated_departure_time.time + " (" + ident.estimated_departure_time.tz + ") " + "and is scheduled", width/2, height/2+100)
-      text("to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + "). ", width/2, height/2+125);
+      text("is scheduled to depart at " + ident.estimated_departure_time.time + " (" + ident.estimated_departure_time.tz + ") " + "and is scheduled", width/2, height/2+100);
+      text("to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + "). ", width/2, height/2+135);
     }
-    if (depSplit[0] === "On" && depSplit[1] === "The" && depSplit[2] === "Way!") {
-      text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and is \n scheduled to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + ") ", width/2, height/2+100)
+    else if (depSplit[0] === "On" && depSplit[1] === "The" && depSplit[2] === "Way!") {
+      text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and is", width/2,height/2+100);
+      text("scheduled to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + ") ", width/2, height/2+135);
     }
     else {
-      text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and arrived in  \n" + destination + " at " + ident.actual_arrival_time.time + " (" + ident.actual_arrival_time.tz + ") ", width/2, height/2+100);
+      text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and arrived in", width/2, height/2+100);
+      text(destination + " at " + ident.actual_arrival_time.time + " (" + ident.actual_arrival_time.tz + ") ", width/2, height/2+135);
     }
   }
   
-  if (state === 2) {
+  else if (state === 2) {
     let distanceKm = Math.floor(ident.distance_filed*1.609);
     let codeshareLength = ident.codeshares.split(",");
     textAlign(LEFT);
@@ -231,7 +242,7 @@ function displayFlightInfo(ident) {
     text(ident.full_aircrafttype, width/2 + 410, 160);
     text(distanceKm + " km", width/2- 220,220);
     text(ident.display_filed_altitude, width/2 + 425, 220);
-    state = 3;
+    // state = 3;
 
   }
   noLoop();
@@ -310,12 +321,19 @@ function mouseClicked() {
       if (state === 3) {
         noLoop();
       }
+      else if (state === 2) {
+        redraw();
+        state = 1;
+        background(45);
+        
+      }
       else {
         state = 2;
-        redraw()
+        redraw();
       }
     }
   }
+
   // if (mouseX > width/2-75 && mouseX < width/2 + 125) {
   //   if (mouseY > height-90 && mouseY < height-40) {
   //     if (menuState === 2 || menuState === 3){
@@ -363,8 +381,6 @@ function setAirlineCodes() {
   for (let i =0; i < codes.length; i ++) {
     let airCode = codes[i].split(" ")[0];
     let airlineName = codes[i].substr(4, );
-
-
     airlineCodes.set(airCode, airlineName);
 
   }
