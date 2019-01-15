@@ -229,22 +229,6 @@ function displayGrid() {
 }
 
 
-// function keyPressed() {
-//   if (state === 1) {
-//     state = 2;
-//   }
-//   else if(state === 2) {
-//     state = 3;
-//   }
-//   else if (state === 3) {
-//     state = 1;
-//   }
-//   // else if (state === 4) {
-//   //   state = 1;
-//   // }
-
-//   loop();
-// }
 
 function setAirlineCodes() {
   for (let i =0; i < codes.length; i ++) {

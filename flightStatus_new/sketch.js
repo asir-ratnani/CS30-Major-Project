@@ -32,7 +32,6 @@ let state = 0;
 let menuState;
 
 
-
 function preload() {
   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
@@ -58,8 +57,6 @@ function setup() {
   makeInputBox();
   drawText();
   setAirlineCodes();
-  
-
 }
 
 
@@ -219,8 +216,18 @@ function displayFlightInfo(ident) {
   }
   
   else if (state === 2) {
+
     let distanceKm = Math.floor(ident.distance_filed*1.609);
-    let codeshareLength = ident.codeshares.split(",");
+    if (ident.codeshares !== undefined) {
+      let codeshareLength = ident.codeshares.split(",");
+      if (codeshareLength.length < 4) {
+        text(ident.codeshares, width/2 -195, 160);
+      }
+      else {
+        text(codeshareLength[0] + "," + codeshareLength[1] + "," + codeshareLength[2],width/2 -145, 160);
+      }
+    }
+
     textAlign(LEFT);
     fill(255,216,0);
     text("Status: ", width/2 - 350,100);
@@ -232,16 +239,11 @@ function displayFlightInfo(ident) {
 
     fill("green");
     text(ident.status, width/2 -250, 100);
-    if (codeshareLength.length < 4) {
-      text(ident.codeshares, width/2 -195, 160);
-    }
-    else {
-      text(codeshareLength[0] + "," + codeshareLength[1] + "," + codeshareLength[2],width/2 -195, 160);
-    }
+
     text(airlineCodes.get(ident.airline), width/2 + 340, 100);
     text(ident.full_aircrafttype, width/2 + 410, 160);
     text(distanceKm + " km", width/2- 220,220);
-    text(ident.display_filed_altitude, width/2 + 425, 220);
+    text(ident.display_filed_altitude, width/2 + 525, 220);
     // state = 3;
 
   }
