@@ -15,6 +15,58 @@
 // PLEASE ADD COLOUR, ITS SO BLAND
 // Create Menu to tie it all together:)
 
+class Button {
+  constructor(x, y, w, h, rest, hover, text) {
+    // position
+    this.x = x;
+    this.y = y;
+
+    // size
+    this.width = w;
+    this.height = h;
+
+    // colors
+    this.restCol = rest;
+    this.hoverCol = hover;
+
+    // buttons words
+    this.text = text;
+
+  }
+
+  clicked() {
+    let pressed = false;
+
+    if (this.hovering()) {
+      // hovering
+      fill(this.hoverCol);
+      if (mouseIsPressed)
+        pressed = true;
+    }
+    else
+      fill(this.restCol);
+
+    // box
+    rect(this.x, this.y, this.width, this.height);
+
+    // text
+    fill("black");
+    text(this.text, this.x, this.y);
+    return pressed;
+  }
+
+  hovering() {
+    let left = this.x + width/2 - this.width/2;
+    let right = this.x + width/2 + this.width/2;
+    let top = this.y + height/2 - this.height/2;
+    let bottom = this.y + height/2 + this.height/2;
+
+    return mouseX > left && mouseX < right &&
+           mouseY > top && mouseY < bottom;
+  }
+}
+
+
 let airlineCodes = new Map ();
 let input;
 let inputButton;
@@ -30,6 +82,7 @@ let origin, originCode;
 let destination,destinationCode;
 let state = 0;
 let menuState;
+let button_1;
 
 
 function preload() {
@@ -57,6 +110,9 @@ function setup() {
   makeInputBox();
   drawText();
   setAirlineCodes();
+
+  button_1 = new Button();
+  
 }
 
 
@@ -244,7 +300,7 @@ function displayFlightInfo(ident) {
     text(ident.full_aircrafttype, width/2 + 410, 160);
     text(distanceKm + " km", width/2- 220,220);
     text(ident.display_filed_altitude, width/2 + 525, 220);
-    // state = 3;
+
 
   }
   noLoop();
