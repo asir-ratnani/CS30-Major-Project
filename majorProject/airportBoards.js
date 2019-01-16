@@ -9,23 +9,23 @@
 // - Add in window resizing (aka no values in width and height)
 // - Optimize for mobile devices
 
-let widths = [475,330,175,125,125,250];
-let airlineCodes = new Map ();
-let rows = 15;
-let cols = 6;
-let x,y;
-let cellSize;
-let info;
-let departures, arrivals, scheduled, enroute;
-let typeOfFlight;
-let state = 1;
-let status;
-let font_1, font_2, font_3;
-let airport_code;
-let codes;
-let cyxe, cyqr, cyyz, cyyc, cyvr, cyul;
-let klax, kjfk, kord, egll, lfpg, omdb, yssy;
-let departureButton, scheduledButton, arrivalButton;
+// let widths = [475,330,175,125,125,250];
+// let airlineCodes = new Map ();
+// let rows = 15;
+// let cols = 6;
+// let x,y;
+// let cellSize;
+// let info;
+// let departures, arrivals, scheduled, enroute;
+// let typeOfFlight;
+// let airportState = 1;
+// let status;
+// let font_1, font_2;
+// let airport_code;
+// let codes;
+// let cyxe, cyqr, cyyz, cyyc, cyvr, cyul;
+// let klax, kjfk, kord, egll, lfpg, omdb, yssy;
+// let departureButton, scheduledButton, arrivalButton;
 
 
 function preload() {
@@ -48,45 +48,35 @@ function preload() {
   
   codes = loadStrings('assets/AirlineCodes.txt')
   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-  font_2 = loadFont("assets/famirids/Famirids..ttf");
-  font_3 = loadFont("assets/digital-dream/DigitalDream.ttf");
+  font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
 }
 
-function setup() {
-  createCanvas(2000, 900);
-  drawButtons();
-  setupCityMenu();
-  info = cyxe;
-  setAirlineCodes();
-  cellSize = height / rows;
+// function setup() {
 
-  x = 10;
-  y = 45;
+// }
 
-}
+// function draw() {
+//   background(20);
 
-function draw() {
-  background(20);
+//   textFont(font_1);
+//   textSize(35);
+//   textAlign(CENTER);
+//   fill(125,78,255);
+//   text("Airport Boards", width - 300, 175);
+//   text ("Choose your city below", width - 300, 225);
 
-  textFont(font_1);
-  textSize(35);
-  textAlign(CENTER);
-  fill(125,78,255);
-  text("Airport Boards", width - 300, 175);
-  text ("Choose your city below", width - 300, 225);
+//   departures = info.AirportBoardsResult.departures.flights;
+//   arrivals = info.AirportBoardsResult.arrivals.flights;
+//   scheduled = info.AirportBoardsResult.scheduled.flights;
+//   enroute = info.AirportBoardsResult.enroute.flights;
 
-  departures = info.AirportBoardsResult.departures.flights;
-  arrivals = info.AirportBoardsResult.arrivals.flights;
-  scheduled = info.AirportBoardsResult.scheduled.flights;
-  enroute = info.AirportBoardsResult.enroute.flights;
-
-  determineState();
-  displayGrid();
-  displayJSON();
-  noLoop();
-}
+//   determineState();
+//   displayGrid();
+//   displayJSON();
+//   noLoop();
+// }
 function determineState() {
-  if (state === 1) {
+  if (airportState === 1) {
     status = scheduled;
     fill(0, 225, 60);
     textFont(font_1);
@@ -96,13 +86,13 @@ function determineState() {
     text("Scheduled Flights", width - 300, height/2 + 55);
 
     fill(200);
-    textFont(font_3);
+    textFont(font_2);
     textSize(28);
     textAlign(CENTER);
     text("SCHEDULED", 170, 40);
   }
 
-  else if (state === 2) {
+  else if (airportState === 2) {
     status = departures;
 
     fill(0, 255, 60);
@@ -113,12 +103,12 @@ function determineState() {
     text("Departed Flights", width - 300, height/2 + 55);
 
     fill(200);
-    textFont(font_3);
+    textFont(font_2);
     textSize(28);
     textAlign(CENTER);
     text("DEPARTED", 170, 40);
   }
-  else if (state === 3) {
+  else if (airportState === 3) {
     status = arrivals;
 
     fill(0, 255, 60);
@@ -129,20 +119,20 @@ function determineState() {
     text("Arrived Flights", width - 300, height/2 + 55);
 
     fill(200);
-    textFont(font_3);
+    textFont(font_2);
     textSize(28);
     textAlign(CENTER);
     text("ARRIVALS", 170, 40);
   }
   
-  // else if (state === 4) {
+  // else if (airportState === 4) {
   //   status = enroute;
   // }
 }
 function displayJSON() {
   textAlign(LEFT);
   fill(200);
-  textFont(font_3);
+  textFont(font_2);
   textSize(28);
   text("AIRLINE", widths[0] + 80, 40);
   text("FLIGHT", widths[0] + widths[1]+ 20, 40);
@@ -329,14 +319,14 @@ function drawButtons() {
 }
 
 function scheduledState() {
-  state = 1;
+  airportState = 1;
   loop();
 }
 function departureState() {
-  state = 2;
+  airportState = 2;
   loop();
 }
 function arrivalState() {
-  state = 3;
+  airportState = 3;
   loop();
 }

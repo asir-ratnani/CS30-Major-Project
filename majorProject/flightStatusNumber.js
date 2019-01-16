@@ -9,73 +9,63 @@
 // Create Menu to tie it all together:)
 
 
-let airlineCodes = new Map ();
-let input;
-let inputButton;
-let header_1;
-let flightInfo;
-let currentDate, nextDate, previousDate;
-let y,m,todayd,previousd,nextd;
-let todayFlightList = [];
-let nextFlightList = [];
-let previousFlightList = [];
-let flightNum;
-let origin, originCode;
-let destination,destinationCode;
-let state = 0;
-let menuState;
-let button_1;
+// let airlineCodes = new Map ();
+// let input;
+// let inputButton;
+// let header_1;
+// let flightInfo;
+// let currentDate, nextDate, previousDate;
+// let y,m,todayd,previousd,nextd;
+// let todayFlightList = [];
+// let nextFlightList = [];
+// let previousFlightList = [];
+// let flightNum;
+// let origin, originCode;
+// let destination,destinationCode;
+// let flightState = 0;
+// let menuState;
+// let button_1;
 
 
-function preload() {
-  font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-  font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
-  codes = loadStrings("assets/AirlineCodes.txt")
-  flight_1 = loadJSON("assets/AC1129.json");
-  flight_2 = loadJSON("assets/AC889.json");
-  flight_3 = loadJSON("assets/AI945.json");
-  flight_4 = loadJSON("assets/BA995.json");
-  flight_5 = loadJSON("assets/EK242.json");
-  flight_6 = loadJSON("assets/UA19.json");
-  flight_7 = loadJSON("assets/WEN3369.json");
-  flight_8 = loadJSON("assets/WS601.json");
-
-
-}
+// function preload() {
   
-function setup() {
-  menuState = 1;
-  createCanvas(windowWidth, windowHeight);
-  background(45);
-  // alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
-  makeDate();
-  makeInputBox();
-  drawText();
-  setAirlineCodes();
+
+
+// }
   
-}
+// function setup() {
+//   menuState = 1;
+//   createCanvas(windowWidth, windowHeight);
+//   background(45);
+//   // alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
+//   makeDate();
+//   makeInputBox();
+//   drawText();
+//   setAirlineCodes();
+  
+// }
 
 
 
-function draw() {
-  checkMenuState();
-}
+// function draw() {
+//   checkMenuState();
+// }
 
 function makeDate(){
   if (month() < 10) {
-    m = "0" + month();
+    todaym = "0" + month();
   }
   else {
-    m = month();
+    todaym = month();
   }
-  y = year();
+  todayy = year();
   todayd = day();
   previousd = day()-1;
   nextd = day() +1;
 
-  currentDate = y + "/" + m + "/" + todayd;
-  nextDate = y + "/" + m + "/" + nextd;
-  previousDate = y + "/" + m + "/" + previousd;
+  currentDate = todayy + "/" + todaym + "/" + todayd;
+  nextDate = todayy + "/" + todaym + "/" + nextd;
+  previousDate = todayy + "/" + todaym + "/" + previousd;
 
 
 
@@ -109,7 +99,7 @@ function checkFlight(){
   background(45);
   drawText();
   createMenu();
-  state = 1;
+  flightState = 1;
   redraw();
 }
 function makeInputBox() {
@@ -158,7 +148,7 @@ function saveFlight() {
 }
 
 function displayFlightInfo(ident) {
-  if (state === 1){
+  if (flightState === 1){
     console.log("!")
     fill(255,216,0);
     textFont(font_2);
@@ -192,7 +182,7 @@ function displayFlightInfo(ident) {
     }
   }
   
-  else if (state === 2) {
+  else if (flightState === 2) {
 
     let distanceKm = Math.floor(ident.distance_filed*1.609);
     if (ident.codeshares !== undefined) {
@@ -304,11 +294,11 @@ function createMenu() {
 function mouseClicked() {
   if (mouseX > width/2-75 && mouseX < width/2 + 125) {
     if (mouseY > height-150 && mouseY < height-100) {
-      if (state === 3) {
+      if (flightState === 3) {
         noLoop();
       }
-      else if (state === 2) {
-        state = 1;
+      else if (flightState === 2) {
+        flightState = 1;
         background(45);
         drawText();
         createMenu();
@@ -316,7 +306,7 @@ function mouseClicked() {
 
       }
       else {
-        state = 2;
+        flightState = 2;
         redraw();
       }
     }
@@ -331,7 +321,7 @@ function mouseClicked() {
       background(45);
       drawText();
       createMenu();
-      state = 1;
+      flightState = 1;
       redraw();
     }
   }
@@ -344,7 +334,7 @@ function mouseClicked() {
       background(45);
       drawText();
       createMenu();
-      state = 1;
+      flightState = 1;
       redraw();
     }
   }
@@ -354,7 +344,7 @@ function mouseClicked() {
         noLoop();
       }
       menuState = 3;
-      state = 1;
+      flightState = 1;
 
       background(45);
       drawText();
@@ -366,21 +356,21 @@ function mouseClicked() {
 
 
 
-function setAirlineCodes() {
-  for (let i =0; i < codes.length; i ++) {
-    let airCode = codes[i].split(" ")[0];
-    let airlineName = codes[i].substr(4, );
-    airlineCodes.set(airCode, airlineName);
+// function setAirlineCodes() {
+//   for (let i =0; i < codes.length; i ++) {
+//     let airCode = codes[i].split(" ")[0];
+//     let airlineName = codes[i].substr(4, );
+//     airlineCodes.set(airCode, airlineName);
 
-  }
-}
+//   }
+// }
 
 function checkMenuState(){
   if (menuState === 1){
     if (todayFlightList.length > 0) {
       displayFlightInfo(todayFlightList[0]);
     }
-    else if (state === 1 && todayFlightList.length === 0){
+    else if (flightState === 1 && todayFlightList.length === 0){
       fill("red");
       text("Sorry! There is no flight scheduled for this date!", width/2+25, height-250);
       fill(255,216,0);
@@ -397,10 +387,34 @@ function checkMenuState(){
     if (previousFlightList.length > 0) {
       displayFlightInfo(previousFlightList[0]);
     }
+    else if (flightState === 1 && previousFlightList.length === 0){
+      fill("red");
+      text("Sorry! There is no flight scheduled for this date!", width/2+25, height-250);
+      fill(255,216,0);
+      textFont(font_2);
+      textSize(12);
+      textAlign("LEFT");
+      text("Date of Flight:", width/2-500, height/2+25);
+      fill("green");
+      text(previousDate, width/2-350, height/2+25);
+      noLoop();
+    }
   }
   else if (menuState === 3) {
     if (nextFlightList.length > 0) {
       displayFlightInfo(nextFlightList[0]);
+    }
+    else if (flightState === 1 && nextFlightList.length === 0){
+      fill("red");
+      text("Sorry! There is no flight scheduled for this date!", width/2+25, height-250);
+      fill(255,216,0);
+      textFont(font_2);
+      textSize(12);
+      textAlign("LEFT");
+      text("Date of Flight:", width/2-500, height/2+25);
+      fill("green");
+      text(nextDate, width/2-350, height/2+25);
+      noLoop();
     }
   }
 }

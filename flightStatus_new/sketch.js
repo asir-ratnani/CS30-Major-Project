@@ -93,18 +93,15 @@ function checkFlight(){
   }
 
   for (let i = 0; i < flightInfo.FlightInfoStatusResult.flights.length; i++) {
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/15") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === currentDate) {
       todayFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/16"){
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === nextDate){
       nextFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/14") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === previousDate) {
       previousFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    // else {
-    //   console.log ("else");
-    // }
   }
   background(45);
   drawText();
@@ -397,10 +394,34 @@ function checkMenuState(){
     if (previousFlightList.length > 0) {
       displayFlightInfo(previousFlightList[0]);
     }
+    else if (state === 1 && previousFlightList.length === 0){
+      fill("red");
+      text("Sorry! There is no flight scheduled for this date!", width/2+25, height-250);
+      fill(255,216,0);
+      textFont(font_2);
+      textSize(12);
+      textAlign("LEFT");
+      text("Date of Flight:", width/2-500, height/2+25);
+      fill("green");
+      text(previousDate, width/2-350, height/2+25);
+      noLoop();
+    }
   }
   else if (menuState === 3) {
     if (nextFlightList.length > 0) {
       displayFlightInfo(nextFlightList[0]);
+    }
+    else if (state === 1 && nextFlightList.length === 0){
+      fill("red");
+      text("Sorry! There is no flight scheduled for this date!", width/2+25, height-250);
+      fill(255,216,0);
+      textFont(font_2);
+      textSize(12);
+      textAlign("LEFT");
+      text("Date of Flight:", width/2-500, height/2+25);
+      fill("green");
+      text(nextDate, width/2-350, height/2+25);
+      noLoop();
     }
   }
 }
