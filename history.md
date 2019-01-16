@@ -10,7 +10,7 @@
  - Created Major Project proposal, including need to have list and nice to have list
 
 # December 19/20, 2018
- - Used Regular Expression to set over 500 airline codes to the respected airline name via a map
+ - Used Regular Expression to set over 500 airline codes to the respected airline name via a Map
 
 # January 9, 2019
  - Completed Airport Boards - Manual Edition
@@ -19,6 +19,10 @@
  - Completed prototype for Flight Status - Manual Edition via Ident.
  
  - Note: GitHub commit error, wrong date was written in the commit, Should have been Jan 12/13.
+
+# January 15, 2019
+ - Completed Flight Status - Manual Edition via Ident
+ - Started to create menu to tie it all together.
 
 
  
