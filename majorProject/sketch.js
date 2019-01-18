@@ -6,6 +6,18 @@
 // - describe what you did to take this project "above and beyond"
 
 // Variables for Airport Boards
+
+// class Menu {
+//   constructor(xpos, ypos, width, height, begCol, overCol) {
+//     this.xpos = xpos;
+//     this.ypos = ypos;
+//     this.width = width;
+//     this.height = height;
+//     this.begCol = eimear;
+//     this. = camila;
+//   }
+// }
+
 let widths = [475,330,175,125,125,250];
 let airlineCodes = new Map ();
 let rows = 15;
@@ -43,6 +55,7 @@ let button_1;
 let flight_1,flight_2,flight_3,flight_4,flight_5,flight_6,flight_7,flight_8;
 
 let state = 0;
+
 
 
 function preload() {
@@ -90,8 +103,9 @@ function setup() {
     noLoop();  
   }
   else if (state === 2) {
-    menuState = 1;
     createCanvas(windowWidth, windowHeight);
+    flightInfo = flight_1;
+    menuState = 1;
     background(45);
     // alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
     makeDate();
@@ -136,13 +150,21 @@ function keyPressed() {
   if (state === 0 && key === "a") {
     state = 1;
     setup();
+
   }
   else if (state === 1 && key === "s") {
+    removeElements();
     state = 2;
+    // background(45);
     setup();
+    redraw();
+    // remove();
+
   }
   else if (state === 2 && key === "d") {
+    removeElements();
     state = 0;
     setup();
+    redraw();
   }
 }

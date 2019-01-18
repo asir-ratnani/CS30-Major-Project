@@ -28,28 +28,28 @@
 // let departureButton, scheduledButton, arrivalButton;
 
 
-function preload() {
-  cyyz = loadJSON('assets/Toronto.json')
-  cyxe = loadJSON('assets/Saskatoon.json')
-  cyqr = loadJSON('assets/Regina.json')
-  cyyc = loadJSON('assets/Calgary.json')
-  cyvr = loadJSON('assets/Vancouver.json')
-  cyul = loadJSON('assets/Montreal.json')
-  klax = loadJSON('assets/Los Angeles.json')
-  kjfk = loadJSON('assets/New York JFK.json')
-  kord = loadJSON('assets/Chicago.json')
-  egll = loadJSON('assets/London.json')
-  lfpg = loadJSON('assets/Paris.json')
-  omdb = loadJSON('assets/Dubai.json')
-  yssy = loadJSON('assets/Sydney.json')
+// function preload() {
+//   cyyz = loadJSON('assets/Toronto.json')
+//   cyxe = loadJSON('assets/Saskatoon.json')
+//   cyqr = loadJSON('assets/Regina.json')
+//   cyyc = loadJSON('assets/Calgary.json')
+//   cyvr = loadJSON('assets/Vancouver.json')
+//   cyul = loadJSON('assets/Montreal.json')
+//   klax = loadJSON('assets/Los Angeles.json')
+//   kjfk = loadJSON('assets/New York JFK.json')
+//   kord = loadJSON('assets/Chicago.json')
+//   egll = loadJSON('assets/London.json')
+//   lfpg = loadJSON('assets/Paris.json')
+//   omdb = loadJSON('assets/Dubai.json')
+//   yssy = loadJSON('assets/Sydney.json')
   
 
 
   
-  codes = loadStrings('assets/AirlineCodes.txt')
-  font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-  font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
-}
+//   codes = loadStrings('assets/AirlineCodes.txt')
+//   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
+//   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
+// }
 
 // function setup() {
 

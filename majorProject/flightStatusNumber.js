@@ -28,7 +28,18 @@
 
 
 // function preload() {
-  
+//   codes = loadStrings('assets/AirlineCodes.txt');
+//   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
+//   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
+//   flight_1 = loadJSON("assets/AC1129.json");
+//   flight_2 = loadJSON("assets/AC889.json");
+//   flight_3 = loadJSON("assets/AI945.json");
+//   flight_4 = loadJSON("assets/BA995.json");
+//   flight_5 = loadJSON("assets/EK242.json");
+//   flight_6 = loadJSON("assets/UA19.json");
+//   flight_7 = loadJSON("assets/WEN3369.json");
+//   flight_8 = loadJSON("assets/WS601.json");
+
 
 
 // }
@@ -83,13 +94,13 @@ function checkFlight(){
   }
 
   for (let i = 0; i < flightInfo.FlightInfoStatusResult.flights.length; i++) {
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/15") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/16") {
       todayFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/16"){
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/17"){
       nextFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/14") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/15") {
       previousFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
     // else {

@@ -24,5 +24,10 @@
  - Completed Flight Status - Manual Edition via Ident
  - Started to create menu to tie it all together.
 
+# January 18, 2019
+ - Created menu functionality to switch between Menu Screen, Airport Boards - Manual, and Flight Status - Ident.
+ - Still need to design it and add colour.
+
+
 
  
