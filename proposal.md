@@ -7,7 +7,7 @@ I am planning to create somewhat of a flight status program.
 
 ### Need to Have!!!
  - Flight status using Flight Number. (COMPLETED)
- - Flight status using Origin/Destination
+ - Flight status using Origin/Destination (COMPLETED)
  - Departure/Arrivals Board for certain airport (COMPLETED)
 
 ### Nice to Have :)
