@@ -2,8 +2,8 @@
 // Asir Ratnani
 // January 9, 2019
 //
+// The Following class was created with help from Travis Ahern (Thanks again!)
 
-// The Following class was created with much help from Travis Ahern (Thanks again!)
 class Button {
   constructor(x,y,w,h,begcolR, begcolG, begcolB, overcolR, overcolG, overcolB,text,font,size){
     this.x = x;
@@ -109,7 +109,7 @@ let yesterdayFlights = [];
 // Variables for Menu
 let state = 0;
 let airlineCodes = new Map ();
-let airportBoardsButton, flightNumberButton, origDestButton, backButton, airportBackButton;
+let airportBoardsButton, flightNumberButton, origDestButton;
 let plane;
 
 
@@ -171,8 +171,10 @@ function preload() {
   font_4 = loadFont("assets/fonts/game_over.ttf")
   font_5 = loadFont("assets/fonts/Solari.ttf");
 }
+
 function setup() {
   setAirlineCodes();
+
 
   if (state === 0) {
     createCanvas(windowWidth, windowHeight);
@@ -180,14 +182,11 @@ function setup() {
     airportBoardsButton = new Button(75, height-125, 250, 55, 43, 229, 86, 229, 43, 176, "Airport Boards", font_4,89);
     flightNumberButton = new Button(75,height/2, 250, 55, 43, 229, 86, 229, 43, 176, "Status by Flight Number", font_4, 55);
     origDestButton = new Button (75, 165, 250, 55, 43, 229, 86, 229, 43, 176, "Status by Origin/Dest.", font_4, 60);
-    backButton = new Button (width-145, 25, 125, 55, 255, 0, 0, 0, 255, 0, "BACK", font_4, 85);
-    airportBackButton = new Button (1845, 65, 125, 55, 255, 0 ,0, 0, 255, 0, "BACK", font_4, 85);
 
   }
 
   else if (state === 1) {
-
-    createCanvas(2000, 900);
+    createCanvas(2000, 900); 
     drawButtons();
     setupCityMenu();
     info = cyxe;
@@ -195,7 +194,6 @@ function setup() {
   
     x = 10;
     y = 45;
-    noLoop();  
   }
   else if (state === 2) {
     createCanvas(windowWidth, windowHeight);
@@ -241,15 +239,10 @@ function draw() {
       setup();
       redraw();
     }
-
-
-    // background(125);
-    // fill(0);
-    // text("Menu", width/2, height/2);
-
   }
   else if (state === 1) {
     background(20);
+
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
@@ -268,43 +261,15 @@ function draw() {
     noLoop();
   }
   else if (state === 2) {
-    backButton.pressed();
-    if (backButton.pressed()){
-      state = 0;
-      removeElements();
-      setup();
-      redraw();
-    }
     checkMenuState();
-    loop();
   }
   else if (state === 3) {
-    backButton.pressed();
-    if (backButton.pressed()){
-      state = 0;
-      removeElements();
-      setup();
-      redraw();
-    }
+
     drawOriginDestText();
   }
-  // backButton.pressed();
-  // if (backButton.pressed()){
-  //   state = 0;
-  //   removeElements();
-  //   setup();
-  //   redraw();
-  // }
+
 }
-function drawAirportBackButton() {
-  airportBackButton.pressed();
-  if (airportBackButton.pressed()) {
-    state = 0;
-    removeElements();
-    setup();
-    redraw();
-  }
-}
+
 function drawMainScreenText() {
   fill(0);
   textFont(font_4);
@@ -324,35 +289,15 @@ function setAirlineCodes() {
   }
 }
 
-// function keyPressed() {
-//   // if (state === 0 && key === "a") {
-//   //   state = 1;
-//   //   setup();
-//   //   redraw();
-
-//   // }
-//  if (state === 1 && key === "s") {
-//     removeElements();
-//     state = 2;
-//     // background(45);
-//     setup();
-//     redraw();
-//     // remove();
-
-//   }
-//   else if (state === 2 && key === "d") {
-//     removeElements();
-//     state = 3;
-//     setup();
-//     redraw();
-//   }
-//   else if (state === 3 && key === "f") {
-//     removeElements();
-//     state = 0;
-//     setup();
-//     redraw();
-//   }
-// }
+function keyPressed() {
+  if (key === "Escape") {
+    state = 0;
+    removeElements();
+    setup();
+    redraw();
+    loop();
+  }
+}
 
 function mouseClicked() {
   if (state === 2){

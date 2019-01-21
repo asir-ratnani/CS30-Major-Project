@@ -94,13 +94,13 @@ function checkFlight(){
   }
 
   for (let i = 0; i < flightInfo.FlightInfoStatusResult.flights.length; i++) {
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/16") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/21") {
       todayFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/17"){
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/22"){
       nextFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/15") {
+    if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/20") {
       previousFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
     // else {
