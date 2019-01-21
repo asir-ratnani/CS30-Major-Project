@@ -14,3 +14,11 @@
 - Maybe add buttons to make it more random person friendly
 - Perhaps centre the other text
 - A cool thing that you could do would be to be able to imput code, then it will highlight the flight?
+
+### Beta Test #3 - Eimear
+## January 21, 2019
+
+ - Make the buttons nicer (AIR PORT BOARDS)
+ - Make a back button so you can go back and choose something else
+ - Add jazz music to make it more entertaining
+ - 

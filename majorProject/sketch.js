@@ -56,7 +56,6 @@ class Button {
 
 // Variables for Airport Boards
 let widths = [475,330,175,125,125,250];
-let airlineCodes = new Map ();
 let rows = 15;
 let cols = 6;
 let x,y;
@@ -92,7 +91,7 @@ let button_1;
 let flight_1,flight_2,flight_3,flight_4,flight_5,flight_6,flight_7,flight_8;
 
 // Variables for Flight Orig/Dest
-let todayButton, tomorrowButton, yesterdayButton, backButton;
+let todayButton, tomorrowButton, yesterdayButton;
 let originDropdown, destDropdown;
 let submitButton;
 let flightDate;
@@ -109,7 +108,8 @@ let yesterdayFlights = [];
 
 // Variables for Menu
 let state = 0;
-let airportBoardsButton, flightNumberButton, origDestButton;
+let airlineCodes = new Map ();
+let airportBoardsButton, flightNumberButton, origDestButton, backButton, airportBackButton;
 let plane;
 
 
@@ -176,16 +176,17 @@ function setup() {
 
   if (state === 0) {
     createCanvas(windowWidth, windowHeight);
-    // background(45);
     strokeWeight(3);
     airportBoardsButton = new Button(75, height-125, 250, 55, 43, 229, 86, 229, 43, 176, "Airport Boards", font_4,89);
     flightNumberButton = new Button(75,height/2, 250, 55, 43, 229, 86, 229, 43, 176, "Status by Flight Number", font_4, 55);
     origDestButton = new Button (75, 165, 250, 55, 43, 229, 86, 229, 43, 176, "Status by Origin/Dest.", font_4, 60);
     backButton = new Button (width-145, 25, 125, 55, 255, 0, 0, 0, 255, 0, "BACK", font_4, 85);
+    airportBackButton = new Button (1845, 65, 125, 55, 255, 0 ,0, 0, 255, 0, "BACK", font_4, 85);
 
   }
 
   else if (state === 1) {
+
     createCanvas(2000, 900);
     drawButtons();
     setupCityMenu();
@@ -216,10 +217,11 @@ function setup() {
 }
 
 function draw() {
+
   if (state === 0) {
     image(plane, 0, 0, width, height);
     drawMainScreenText();
-    // loop();
+
     airportBoardsButton.pressed();
     flightNumberButton.pressed();
     origDestButton.pressed();
@@ -248,7 +250,6 @@ function draw() {
   }
   else if (state === 1) {
     background(20);
-    
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
@@ -267,23 +268,24 @@ function draw() {
     noLoop();
   }
   else if (state === 2) {
-    // backButton.pressed();
-    // if (backButton.pressed()){
-    //   state = 0;
-    //   removeElements();
-    //   setup();
-    //   redraw();
-    // }
+    backButton.pressed();
+    if (backButton.pressed()){
+      state = 0;
+      removeElements();
+      setup();
+      redraw();
+    }
     checkMenuState();
+    loop();
   }
   else if (state === 3) {
-    // backButton.pressed();
-    // if (backButton.pressed()){
-    //   state = 0;
-    //   removeElements();
-    //   setup();
-    //   redraw();
-    // }
+    backButton.pressed();
+    if (backButton.pressed()){
+      state = 0;
+      removeElements();
+      setup();
+      redraw();
+    }
     drawOriginDestText();
   }
   // backButton.pressed();
@@ -294,7 +296,15 @@ function draw() {
   //   redraw();
   // }
 }
-
+function drawAirportBackButton() {
+  airportBackButton.pressed();
+  if (airportBackButton.pressed()) {
+    state = 0;
+    removeElements();
+    setup();
+    redraw();
+  }
+}
 function drawMainScreenText() {
   fill(0);
   textFont(font_4);
@@ -314,35 +324,36 @@ function setAirlineCodes() {
   }
 }
 
-function keyPressed() {
-  // if (state === 0 && key === "a") {
-  //   state = 1;
-  //   setup();
-  //   redraw();
+// function keyPressed() {
+//   // if (state === 0 && key === "a") {
+//   //   state = 1;
+//   //   setup();
+//   //   redraw();
 
-  // }
- if (state === 1 && key === "s") {
-    removeElements();
-    state = 2;
-    // background(45);
-    setup();
-    redraw();
-    // remove();
+//   // }
+//  if (state === 1 && key === "s") {
+//     removeElements();
+//     state = 2;
+//     // background(45);
+//     setup();
+//     redraw();
+//     // remove();
 
-  }
-  else if (state === 2 && key === "d") {
-    removeElements();
-    state = 3;
-    setup();
-    redraw();
-  }
-  else if (state === 3 && key === "f") {
-    removeElements();
-    state = 0;
-    setup();
-    redraw();
-  }
-}
+//   }
+//   else if (state === 2 && key === "d") {
+//     removeElements();
+//     state = 3;
+//     setup();
+//     redraw();
+//   }
+//   else if (state === 3 && key === "f") {
+//     removeElements();
+//     state = 0;
+//     setup();
+//     redraw();
+//   }
+// }
+
 function mouseClicked() {
   if (state === 2){
     if (mouseX > width/2-75 && mouseX < width/2 + 125) {
