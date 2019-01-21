@@ -302,68 +302,68 @@ function createMenu() {
   text("Current Date", width/2+25, height-55);
 }
 
-function mouseClicked() {
-  if (mouseX > width/2-75 && mouseX < width/2 + 125) {
-    if (mouseY > height-150 && mouseY < height-100) {
-      if (flightState === 3) {
-        noLoop();
-      }
-      else if (flightState === 2) {
-        flightState = 1;
-        background(45);
-        drawText();
-        createMenu();
-        redraw();
+// function mouseClicked() {
+//   if (mouseX > width/2-75 && mouseX < width/2 + 125) {
+//     if (mouseY > height-150 && mouseY < height-100) {
+//       if (flightState === 3) {
+//         noLoop();
+//       }
+//       else if (flightState === 2) {
+//         flightState = 1;
+//         background(45);
+//         drawText();
+//         createMenu();
+//         redraw();
 
-      }
-      else {
-        flightState = 2;
-        redraw();
-      }
-    }
-  }
+//       }
+//       else {
+//         flightState = 2;
+//         redraw();
+//       }
+//     }
+//   }
 
-  if (mouseX > width/2-75 && mouseX < width/2 + 125) {
-    if (mouseY > height-90 && mouseY < height-40) {
-      if (menuState === 2 || menuState === 3){
-        noLoop();
-      }
-      menuState = 1;
-      background(45);
-      drawText();
-      createMenu();
-      flightState = 1;
-      redraw();
-    }
-  }
-  if (mouseX > width/2-475 && mouseX < width/2 - 275) {
-    if (mouseY > height-150 && mouseY < height-100) {
-      if (menuState === 3 || menuState === 1) {
-        noLoop();
-      }
-      menuState = 2;
-      background(45);
-      drawText();
-      createMenu();
-      flightState = 1;
-      redraw();
-    }
-  }
-  if (mouseX > width/2+300 && mouseX < width/2 + 500) {
-    if (mouseY > height-150 && mouseY < height-100) {
-      if (menuState === 2 || menuState === 3) {
-        noLoop();
-      }
-      menuState = 3;
-      flightState = 1;
+//   if (mouseX > width/2-75 && mouseX < width/2 + 125) {
+//     if (mouseY > height-90 && mouseY < height-40) {
+//       if (menuState === 2 || menuState === 3){
+//         noLoop();
+//       }
+//       menuState = 1;
+//       background(45);
+//       drawText();
+//       createMenu();
+//       flightState = 1;
+//       redraw();
+//     }
+//   }
+//   if (mouseX > width/2-475 && mouseX < width/2 - 275) {
+//     if (mouseY > height-150 && mouseY < height-100) {
+//       if (menuState === 3 || menuState === 1) {
+//         noLoop();
+//       }
+//       menuState = 2;
+//       background(45);
+//       drawText();
+//       createMenu();
+//       flightState = 1;
+//       redraw();
+//     }
+//   }
+//   if (mouseX > width/2+300 && mouseX < width/2 + 500) {
+//     if (mouseY > height-150 && mouseY < height-100) {
+//       if (menuState === 2 || menuState === 3) {
+//         noLoop();
+//       }
+//       menuState = 3;
+//       flightState = 1;
 
-      background(45);
-      drawText();
-      createMenu();
-      redraw();
-    }
-  }
-}
+//       background(45);
+//       drawText();
+//       createMenu();
+//       redraw();
+//     }
+//   }
+// }
 
 
 

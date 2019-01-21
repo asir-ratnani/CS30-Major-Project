@@ -82,8 +82,8 @@ function determineState() {
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
-    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 300, height / 2);
-    text("Scheduled Flights", width - 300, height/2 + 55);
+    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 275, height / 2);
+    text("Scheduled Flights", width - 275, height/2 + 55);
 
     fill(200);
     textFont(font_2);
@@ -99,8 +99,8 @@ function determineState() {
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
-    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 300, height / 2);
-    text("Departed Flights", width - 300, height/2 + 55);
+    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 275, height / 2);
+    text("Departed Flights", width - 275, height/2 + 55);
 
     fill(200);
     textFont(font_2);
@@ -115,8 +115,8 @@ function determineState() {
     textFont(font_1);
     textSize(35);
     textAlign(CENTER);
-    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 300, height / 2);
-    text("Arrived Flights", width - 300, height/2 + 55);
+    text(info.AirportBoardsResult.airport_info.name + " Airport", width - 275, height / 2);
+    text("Arrived Flights", width - 275, height/2 + 55);
 
     fill(200);
     textFont(font_2);
@@ -219,16 +219,6 @@ function displayGrid() {
 }
 }
 
-
-
-function setAirlineCodes() {
-  for (let i =0; i < codes.length; i ++) {
-    let airCode = codes[i].split(" ")[0];
-    let airlineName = codes[i].substr(4, );
-    airlineCodes.set(airCode, airlineName);
-
-  }
-}
 
 
 function setupCityMenu() {
