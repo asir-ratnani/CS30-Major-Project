@@ -2,79 +2,14 @@
 // Asir Ratnani
 // December 11, 2018
 //
-// Nice to Have List:
-// - Live pull from server
-// - Format buttons to make it look nicer
-// - Format page to make it look nicer
-// - Add in window resizing (aka no values in width and height)
-// - Optimize for mobile devices
-
-// let widths = [475,330,175,125,125,250];
-// let airlineCodes = new Map ();
-// let rows = 15;
-// let cols = 6;
-// let x,y;
-// let cellSize;
-// let info;
-// let departures, arrivals, scheduled, enroute;
-// let typeOfFlight;
-// let airportState = 1;
-// let status;
-// let font_1, font_2;
-// let airport_code;
-// let codes;
-// let cyxe, cyqr, cyyz, cyyc, cyvr, cyul;
-// let klax, kjfk, kord, egll, lfpg, omdb, yssy;
-// let departureButton, scheduledButton, arrivalButton;
 
 
-// function preload() {
-//   cyyz = loadJSON('assets/Toronto.json')
-//   cyxe = loadJSON('assets/Saskatoon.json')
-//   cyqr = loadJSON('assets/Regina.json')
-//   cyyc = loadJSON('assets/Calgary.json')
-//   cyvr = loadJSON('assets/Vancouver.json')
-//   cyul = loadJSON('assets/Montreal.json')
-//   klax = loadJSON('assets/Los Angeles.json')
-//   kjfk = loadJSON('assets/New York JFK.json')
-//   kord = loadJSON('assets/Chicago.json')
-//   egll = loadJSON('assets/London.json')
-//   lfpg = loadJSON('assets/Paris.json')
-//   omdb = loadJSON('assets/Dubai.json')
-//   yssy = loadJSON('assets/Sydney.json')
-  
+//Check state to see if flights are scheduled, departed, or arrived.
 
+// If airportState = 1; Flights are scheduled.
+// If airportState = 2; Flights are departed.
+// If airportState = 3; Flights are arrived.
 
-  
-//   codes = loadStrings('assets/AirlineCodes.txt')
-//   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-//   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
-// }
-
-// function setup() {
-
-// }
-
-// function draw() {
-//   background(20);
-
-//   textFont(font_1);
-//   textSize(35);
-//   textAlign(CENTER);
-//   fill(125,78,255);
-//   text("Airport Boards", width - 300, 175);
-//   text ("Choose your city below", width - 300, 225);
-
-//   departures = info.AirportBoardsResult.departures.flights;
-//   arrivals = info.AirportBoardsResult.arrivals.flights;
-//   scheduled = info.AirportBoardsResult.scheduled.flights;
-//   enroute = info.AirportBoardsResult.enroute.flights;
-
-//   determineState();
-//   displayGrid();
-//   displayJSON();
-//   noLoop();
-// }
 function determineState() {
   if (airportState === 1) {
     status = scheduled;
@@ -124,11 +59,10 @@ function determineState() {
     textAlign(CENTER);
     text("ARRIVALS", 170, 40);
   }
-  
-  // else if (airportState === 4) {
-  //   status = enroute;
-  // }
+
 }
+
+// After setting the flights, show the flights on the grid
 function displayJSON() {
   textAlign(LEFT);
   fill(200);
@@ -149,7 +83,7 @@ function displayJSON() {
     text("DEPARTURE", widths[0] + widths[1] + widths[2] + widths[3] + 12, 50);
   }
 
-  
+  // Used for loop to run through JSON file.
   for (let j = 0; j < cols; j++) {
     y = 45;  
     for (let i =0; i < rows; i++) {
@@ -160,14 +94,16 @@ function displayJSON() {
         textSize(30);
         textFont(font_1);
         textAlign(LEFT);
-      
-        // Check for departure or enroute city or arrival / scheduled city
+
+        // if the flight is cancelled, fill text with red, else fill normally.
+
         if (status[i].cancelled === true) {
           fill(255,0,0);
         }
         else {
           fill(235,175,5);
         }
+        // if the city is unknown, it is known as a private charter.
 
         if (status[i].destination.city === "" || status[i].origin.city === "") {
           text("Private Charter", x, y);
@@ -180,7 +116,7 @@ function displayJSON() {
             text(status[i].origin.city, x, y);
           }
         }
-        
+        // If the airline is specified in the map, use it otherwise its unknown.
         textSize(25);
         if (airlineCodes.has(status[i].airline)) {
           text(airlineCodes.get(status[i].airline), widths[0]+ x, y);
@@ -188,6 +124,7 @@ function displayJSON() {
         else {
           text("Unknown Airline", widths[0] + x, y);
         }
+        // Draw the rest of the info.
         text(status[i].ident, widths[0] + widths[1] + x, y);
         if (status === arrivals) {
           text(status[i].filed_arrival_time.time, widths[0] + widths[1] + widths[2] + x, y);
@@ -204,6 +141,7 @@ function displayJSON() {
   }
 }
 
+// Using hardcoded widths of the grid,create a grid for the flight info.
 function displayGrid() {
   for (let y = 0; y < rows; y++ ) {
     for (let x = 0; x < cols; x++) {
@@ -220,7 +158,7 @@ function displayGrid() {
 }
 
 
-
+// Creates dropdown menu with airports
 function setupCityMenu() {
   dropdown = createSelect();
   dropdown.position(width-350, 300);
@@ -241,6 +179,7 @@ function setupCityMenu() {
 
   dropdown.changed(mySelectEvent);
 }
+// Set the current airport's info.
 function mySelectEvent() {
   let item = dropdown.value();
   if (item === "Saskatoon") {
@@ -288,9 +227,9 @@ function mySelectEvent() {
 
 }
 
+// Create scheduled, departures, and arrivals buttons
 function drawButtons() {
 
-  let col = color(255, 0, 0, 10);
   scheduledButton = createButton('Scheduled');
   departureButton = createButton('Departures');
   arrivalButton = createButton('Arrivals');
@@ -298,10 +237,6 @@ function drawButtons() {
   scheduledButton.position (width - 500, height-200);
   departureButton.position (width - 300, height-200);
   arrivalButton.position (width - 100, height-200);
-
-  scheduledButton.style('#ff00ff', col);
-  
-
 
   scheduledButton.mousePressed(scheduledState);
   departureButton.mousePressed(departureState);

@@ -2,65 +2,9 @@
 // Asir Ratnani
 // January 9, 2019
 
-// API Key = fc2a7d607c39780ddb797b27a76572a79d82ff12
 
-// Notes to Self:
-//
-// Create Menu to tie it all together:)
-
-
-// let airlineCodes = new Map ();
-// let input;
-// let inputButton;
-// let header_1;
-// let flightInfo;
-// let currentDate, nextDate, previousDate;
-// let y,m,todayd,previousd,nextd;
-// let todayFlightList = [];
-// let nextFlightList = [];
-// let previousFlightList = [];
-// let flightNum;
-// let origin, originCode;
-// let destination,destinationCode;
-// let flightState = 0;
-// let menuState;
-// let button_1;
-
-
-// function preload() {
-//   codes = loadStrings('assets/AirlineCodes.txt');
-//   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-//   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
-//   flight_1 = loadJSON("assets/AC1129.json");
-//   flight_2 = loadJSON("assets/AC889.json");
-//   flight_3 = loadJSON("assets/AI945.json");
-//   flight_4 = loadJSON("assets/BA995.json");
-//   flight_5 = loadJSON("assets/EK242.json");
-//   flight_6 = loadJSON("assets/UA19.json");
-//   flight_7 = loadJSON("assets/WEN3369.json");
-//   flight_8 = loadJSON("assets/WS601.json");
-
-
-
-// }
-  
-// function setup() {
-//   menuState = 1;
-//   createCanvas(windowWidth, windowHeight);
-//   background(45);
-//   // alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
-//   makeDate();
-//   makeInputBox();
-//   drawText();
-//   setAirlineCodes();
-  
-// }
-
-
-
-// function draw() {
-//   checkMenuState();
-// }
+// This function formats the current date to the same format as the JSON file. It is not used currently as the 
+// information is not live. It is hardcoded so the dates must be hardcoded also. 
 
 function makeDate(){
   if (month() < 10) {
@@ -78,10 +22,9 @@ function makeDate(){
   nextDate = todayy + "/" + todaym + "/" + nextd;
   previousDate = todayy + "/" + todaym + "/" + previousd;
 
-
-
 }
 
+// Pushes flights to empty arrays based on their dates. (Today, tomorrow, yesterday, etc.)
 function checkFlight(){
   for (let j = 0; j < todayFlightList.length; j++) {
     todayFlightList.shift();
@@ -103,9 +46,7 @@ function checkFlight(){
     if (flightInfo.FlightInfoStatusResult.flights[i].estimated_departure_time.date === "2019/01/20") {
       previousFlightList.push(flightInfo.FlightInfoStatusResult.flights[i]);
     }
-    // else {
-    //   console.log ("else");
-    // }
+
   }
   background(45);
   drawText();
@@ -113,8 +54,10 @@ function checkFlight(){
   flightState = 1;
   redraw();
 }
+
+// This creates the user input box and it's properties.
 function makeInputBox() {
-  input = createInput("AC1129");
+  input = createInput("Ex. AC1129");
   input.position(width/2-100,height/2);
 
   inputButton = createButton("Submit");
@@ -122,6 +65,7 @@ function makeInputBox() {
   inputButton.mousePressed(saveFlight);
 }
 
+// Checks the combination of user input and flight number. Loads the correct JSON file in return.
 function saveFlight() {
   let flight = input.value();
   if (flight === "AC1129") {
@@ -158,6 +102,10 @@ function saveFlight() {
   }  
 }
 
+// If flightState = 1; Basic information is provided
+// If flightState = 2; More Details are provided about the flight
+
+// Displays the saved flight info from a preloaded JSON file. Takes in parameter "ident" which means flight number. (Which flight are you displaying)
 function displayFlightInfo(ident) {
   if (flightState === 1){
     console.log("!")
@@ -187,7 +135,11 @@ function displayFlightInfo(ident) {
       text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and is", width/2,height/2+110);
       text("scheduled to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + ") ", width/2, height/2+145);
     }
-    else {
+    else if (ident.actual_departure_time.epoch === 0 && ident.actual_arrival_time.epoch === 0) {
+      text("is scheduled to depart at " + ident.estimated_departure_time.time + " (" + ident.estimated_departure_time.tz + ") " + "and is scheduled", width/2, height/2+110);
+      text("to arrive at " + ident.estimated_arrival_time.time + " (" + ident.estimated_arrival_time.tz + "). ", width/2, height/2+145);
+    }
+    else{
       text("departed at " + ident.actual_departure_time.time + " (" + ident.actual_departure_time.tz + ") and arrived in", width/2, height/2+110);
       text(destination + " at " + ident.actual_arrival_time.time + " (" + ident.actual_arrival_time.tz + ") ", width/2, height/2+145);
     }
@@ -236,7 +188,7 @@ function displayFlightInfo(ident) {
 }
 
 
-
+// Draws the text at the beginning.
 function drawText() {
 
   textFont("Arial");
@@ -271,6 +223,7 @@ function drawText() {
 
 }
 
+// Creates the menu buttons. More Details, Current Date, Previous Date, Next Date, etc.
 function createMenu() {
   textAlign(CENTER);
   fill(50,35,195);
@@ -302,80 +255,11 @@ function createMenu() {
   text("Current Date", width/2+25, height-55);
 }
 
-// function mouseClicked() {
-//   if (mouseX > width/2-75 && mouseX < width/2 + 125) {
-//     if (mouseY > height-150 && mouseY < height-100) {
-//       if (flightState === 3) {
-//         noLoop();
-//       }
-//       else if (flightState === 2) {
-//         flightState = 1;
-//         background(45);
-//         drawText();
-//         createMenu();
-//         redraw();
+// If menuState = 1; Display current date info.
+// If menuState = 2; Display previous date info.
+// If menuState = 3; Display next date info.
 
-//       }
-//       else {
-//         flightState = 2;
-//         redraw();
-//       }
-//     }
-//   }
-
-//   if (mouseX > width/2-75 && mouseX < width/2 + 125) {
-//     if (mouseY > height-90 && mouseY < height-40) {
-//       if (menuState === 2 || menuState === 3){
-//         noLoop();
-//       }
-//       menuState = 1;
-//       background(45);
-//       drawText();
-//       createMenu();
-//       flightState = 1;
-//       redraw();
-//     }
-//   }
-//   if (mouseX > width/2-475 && mouseX < width/2 - 275) {
-//     if (mouseY > height-150 && mouseY < height-100) {
-//       if (menuState === 3 || menuState === 1) {
-//         noLoop();
-//       }
-//       menuState = 2;
-//       background(45);
-//       drawText();
-//       createMenu();
-//       flightState = 1;
-//       redraw();
-//     }
-//   }
-//   if (mouseX > width/2+300 && mouseX < width/2 + 500) {
-//     if (mouseY > height-150 && mouseY < height-100) {
-//       if (menuState === 2 || menuState === 3) {
-//         noLoop();
-//       }
-//       menuState = 3;
-//       flightState = 1;
-
-//       background(45);
-//       drawText();
-//       createMenu();
-//       redraw();
-//     }
-//   }
-// }
-
-
-
-// function setAirlineCodes() {
-//   for (let i =0; i < codes.length; i ++) {
-//     let airCode = codes[i].split(" ")[0];
-//     let airlineName = codes[i].substr(4, );
-//     airlineCodes.set(airCode, airlineName);
-
-//   }
-// }
-
+// Checks the state of the date
 function checkMenuState(){
   if (menuState === 1){
     if (todayFlightList.length > 0) {

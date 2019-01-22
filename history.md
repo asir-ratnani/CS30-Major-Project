@@ -28,9 +28,12 @@
  - Created menu functionality to switch between Menu Screen, Airport Boards - Manual, and Flight Status - Ident.
  - Still need to design it and add colour.
 
- # January 19, 2019
-  - Completed Flight Status - Origin/Destination Edition
+# January 19, 2019
+ - Completed Flight Status - Origin/Destination Edition
 
+# January 21, 2019
+ - Completed Menu
+ - Completed Major Project
 
 
  

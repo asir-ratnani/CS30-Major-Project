@@ -1,8 +1,11 @@
 // Menu - Flight Program
 // Asir Ratnani
 // January 9, 2019
-//
+
+// This is the main file that contains all the information for the menu of the project
+
 // The Following class was created with help from Travis Ahern (Thanks again!)
+// Create a new menu button
 
 class Button {
   constructor(x,y,w,h,begcolR, begcolG, begcolB, overcolR, overcolG, overcolB,text,font,size){
@@ -112,7 +115,7 @@ let airlineCodes = new Map ();
 let airportBoardsButton, flightNumberButton, origDestButton;
 let plane;
 
-
+// Load JSON files, images, and sound
 function preload() {
   plane = loadImage("assets/plane.png");
 
@@ -172,10 +175,15 @@ function preload() {
   font_5 = loadFont("assets/fonts/Solari.ttf");
 }
 
+// If state = 0: The Main Menu
+// If state = 1: Run Airport Boards Program
+// If state = 2: Run Flight Status via Number
+// If state = 3: Run Flight Status via Origin and Destination
+
 function setup() {
   setAirlineCodes();
 
-
+  // Run setup for Menu
   if (state === 0) {
     createCanvas(windowWidth, windowHeight);
     strokeWeight(3);
@@ -184,7 +192,7 @@ function setup() {
     origDestButton = new Button (75, 165, 250, 55, 43, 229, 86, 229, 43, 176, "Status by Origin/Dest.", font_4, 60);
 
   }
-
+  // Run setup for Airport Boards
   else if (state === 1) {
     createCanvas(2000, 900); 
     drawButtons();
@@ -195,16 +203,18 @@ function setup() {
     x = 10;
     y = 45;
   }
+
+  // Run setup for Flight Status - Flight Number
   else if (state === 2) {
     createCanvas(windowWidth, windowHeight);
     flightInfo = flight_1;
     menuState = 1;
     background(45);
-    // alert("Welcome to the Flight Status Checker, To begin please enter in the flight number :)");
     makeDate();
     makeInputBox();
     drawText();
   }
+  // Run setup for Flight Status - Origin/Destination
   else if (state === 3) {
     createCanvas(windowWidth, windowHeight);
     background(45);
@@ -215,11 +225,12 @@ function setup() {
 }
 
 function draw() {
-
+  // Run draw loop for Menu
   if (state === 0) {
     image(plane, 0, 0, width, height);
     drawMainScreenText();
 
+    // Ask to see if any button has been pressed. Change state accordingly.
     airportBoardsButton.pressed();
     flightNumberButton.pressed();
     origDestButton.pressed();
@@ -240,6 +251,7 @@ function draw() {
       redraw();
     }
   }
+  // Run draw loop for Airport Boards
   else if (state === 1) {
     background(20);
 
@@ -250,6 +262,7 @@ function draw() {
     text("Airport Boards", width - 300, 175);
     text ("Choose your city below", width - 300, 225);
 
+    // Set JSON flights to a var to make it easier to call.
     departures = info.AirportBoardsResult.departures.flights;
     arrivals = info.AirportBoardsResult.arrivals.flights;
     scheduled = info.AirportBoardsResult.scheduled.flights;
@@ -260,9 +273,11 @@ function draw() {
     displayJSON();
     noLoop();
   }
+  // Run draw loop for Flight Status - Flight Number
   else if (state === 2) {
     checkMenuState();
   }
+  // Run draw loop for Flight Status - Origin/Destination
   else if (state === 3) {
 
     drawOriginDestText();
@@ -270,6 +285,7 @@ function draw() {
 
 }
 
+// Draw the text on the main screen.
 function drawMainScreenText() {
   fill(0);
   textFont(font_4);
@@ -278,8 +294,11 @@ function drawMainScreenText() {
   text("FLIGHT CHECKER VERSION 5.6! (BETA EDITION)", width/2, 66);
   textSize(80);
   text("Developed By: Asir Ratnani; API Usage from FlightAware", width/2, 105);
+  textSize(60);
+  text("Hint: Press escape to return to the main menu", width - 280, 160)
 }
 
+// Set the airline codes from the .txt file to the actual name using a Map. Used Regular Expression to remove whitespace.
 function setAirlineCodes() {
   for (let i =0; i < codes.length; i ++) {
     let airCode = codes[i].split(" ")[0];
@@ -289,6 +308,7 @@ function setAirlineCodes() {
   }
 }
 
+// If escape key is pressed, return to main menu.
 function keyPressed() {
   if (key === "Escape") {
     state = 0;
@@ -298,6 +318,9 @@ function keyPressed() {
     loop();
   }
 }
+
+// I had multiple mousePressed functions in flight status and origin/destination so I combined them into one mouseClicked function.
+// It checks the state and proceeds with the rest of the code.
 
 function mouseClicked() {
   if (state === 2){

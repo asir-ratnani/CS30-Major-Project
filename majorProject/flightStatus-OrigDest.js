@@ -2,75 +2,8 @@
 // Asir Ratnani
 // January 15, 2019
 //
-// Extra for Experts:
-// - describe what you did to take this project "above and beyond"
 
-// let airlineCodes = new Map ();
-// let todayButton, tomorrowButton, yesterdayButton;
-// let originDropdown, destDropdown;
-// let submitButton;
-// let flightDate;
-// let currentCombo;
-// let saskCal, saskTor, saskVanc, saskEdm;
-// let torSask, torCal, torVanc, torEdm;
-// let calSask, calTor, calVanc, calEdm;
-// let vanSask, vanTor, vanCal, vanEdm;
-// let edmSask, edmTor, edmCal, edmVanc;
-// let currentList;
-// let todayFlights = [];
-// let tomorrowFlights = [];
-// let yesterdayFlights = [];
-
-
-// function preload(){
-//   codes = loadStrings("assets/AirlineCodes.txt");
-
-//   saskCal = loadJSON("assets/SaskCal.json");
-//   saskTor = loadJSON("assets/SaskTor.json");
-//   saskVanc = loadJSON("assets/SaskVanc.json");
-//   saskEdm = loadJSON("assets/SaskEdm.json");
-
-//   torSask = loadJSON("assets/TorSask.json");
-//   torCal = loadJSON("assets/TorCal.json");
-//   torVanc = loadJSON("assets/TorVanc.json");
-//   torEdm = loadJSON("assets/TorEdm.json");
-
-//   calSask = loadJSON("assets/CalSask.json");
-//   calTor = loadJSON("assets/CalTor.json");
-//   calVanc = loadJSON("assets/CalVanc.json");
-//   calEdm = loadJSON("assets/CalEdm.json");
-
-//   vanSask = loadJSON("assets/VanSask.json");
-//   vanTor = loadJSON("assets/VanTor.json");
-//   vanCal = loadJSON("assets/VanCal.json");
-//   vanEdm = loadJSON("assets/VanEdm.json");
-
-//   edmSask = loadJSON("assets/EdmSask.json");
-//   edmTor = loadJSON("assets/EdmTor.json");
-//   edmCal = loadJSON("assets/EdmCal.json");
-//   edmVanc = loadJSON("assets/EdmVanc.json");
-
-//   font_1 = loadFont("assets/open-24-display/Open 24 Display St.ttf");
-//   font_2 = loadFont("assets/digital-dream/DigitalDream.ttf");
-//   font_3 = loadFont("assets/famirids/Famirids..ttf");
-
-// }
-
-
-// function setup() {
-//   createCanvas(windowWidth, windowHeight);
-//   background(45);
-//   setAirlineCodes();
-//   setupOriginDest();
-//   makeSubmitButton();
-
-// }
-
-// function draw() {
-//   drawOriginDestText();
-
-// }
-
+// Draw origin and destination text
 function drawOriginDestText(){
   fill(255);
   textFont(font_3);
@@ -81,6 +14,8 @@ function drawOriginDestText(){
   noLoop();
 
 }
+
+// Set up buttons for setting the date.
 function setupButtons(){
   fill("green");
   strokeWeight(1.5);
@@ -97,13 +32,14 @@ function setupButtons(){
   text("Yesterday's Flights", width-138, height/2+155);
 }
 
-
+// Create the submit button using p5.DOM
 function makeSubmitButton(){
   submitButton = createButton("Submit");
   submitButton.position(555, 77);
 
   submitButton.mousePressed(setOriginDest)
 }
+// Setup the origin and destination dropdown menus
 function setupOriginDest() {
   originDropdown= createSelect();
   originDropdown.position(100, 75);
@@ -129,10 +65,13 @@ function setupOriginDest() {
 
 }
 
+// Set the Origin and Destination combo and set the correct JSON file.
+
 function setOriginDest() {
   background(45);
   drawOriginDestText();
   setupButtons();
+  // Made sure the arrays were empty each time the submit button was clicked.
   todayFlights = [];
   tomorrowFlights = [];
   yesterdayFlights = [];
@@ -205,7 +144,7 @@ function setOriginDest() {
    else if (originVal === "Edmonton" && destVal === "Saskatoon") {
     currentCombo = edmSask;
   }
-
+  // If the match is not listed it means the same city was chosen twice. Show Error code.
   else {
     fill(255,0,0);
     textFont(font_1);
@@ -233,6 +172,7 @@ function setOriginDest() {
 
 }
 
+// Used empty arrays to push in current date , previous date, and next date info
 function sortOriginDest() {
   for (let i = currentCombo.FindFlightResult.flights.length-1; i > 0 ; i--){
     let date = currentCombo.FindFlightResult.flights[i].segments[0].estimated_departure_time.date;
@@ -251,6 +191,7 @@ function sortOriginDest() {
   displayOriginDest();
 }
 
+// Actually display the information in grid format. This function creates the grid and displays the info.
 function displayOriginDest () {
   background(45);
   setupButtons();
@@ -348,23 +289,3 @@ function displayOriginDest () {
 
 
 }
-
-
-// function mousePressed() {
-//   if (mouseX > width-250 && mouseX < width-30) {
-//     if (mouseY > height/2 && mouseY < height/2+65) {
-//       currentList = todayFlights;
-//       displayOriginDest();
-//     }
-//     else if (mouseY > height/2-110 && mouseY < height/2-45) {
-//       currentList = tomorrowFlights;
-//       displayOriginDest();
-
-//     }
-//     else if (mouseY > height/2+110 && mouseY < height/2+175) {
-//       currentList = yesterdayFlights;
-//       displayOriginDest();
-
-//     }
-//   }
-// }
